@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="~{fragments/commons::head}">
+
+  </head>
+  <body class="forum">
+    <nav th:replace="~{fragments/commons::nav}">
+    </nav>
+    <h1>Форум</h1>
+    <section class="discussion">
+      <div class="discussion-info" th:each="f : ${forum}" th:object="${f}">
+        <a href=""
+          ><h2 th:text="*{title}">Example title</h2>
+          </a
+        ><p th:text="*{description}">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+            sunt eveniet molestias porro! Beatae neque cumque dolore quidem
+            vero. Officia laboriosam dolorum aliquam maxime dignissimos quasi
+            laborum ratione, vero fuga?
+          </p>
+      </div>
+    </section>
+
+    <footer th:replace="~{fragments/commons::footer}">
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

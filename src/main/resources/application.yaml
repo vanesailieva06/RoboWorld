@@ -1,0 +1,67 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:3306/roboworld?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC"
+    username:  ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:Vanesa06}
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 5MB
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  sql:
+    init:
+      mode: never
+  profiles:
+    active: development
+
+  jpa:
+    # Choose either MySQL 8 or MySQL 5 below
+    # For MySQL 8
+    database-platform: org.hibernate.dialect.MySQLDialect
+    #For MySQL 5
+    #database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+  #Cloudinary Properties
+  #cloudinary:
+  #api-key:
+  #api-secret:
+  #cloud-name:
+  #  main:
+  #    allow-circular-references: true
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
+    org.springframework.security: TRACE
+    root: info
+mail:
+  roboworld: "roboworld@example.com"
+  host: localhost
+  port: 1025
+  username: ${MAIL_USER:softuni}
+  password: ${MAIL_PASSWORD:softuni}
+
+
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: "*"
+
+roboworld:
+  default.admin.pass: ${DEFAULT_ADMIN_PASS:topsecret}
+  remember.me.key: ${REMEMBER_ME_KEY:topsecret}

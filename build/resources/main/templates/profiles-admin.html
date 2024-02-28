@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="~{fragments/commons::head}">
+  </head>
+  <body class="profiles">
+    <nav th:replace="~{fragments/commons::nav}">
+    </nav>
+    <h1>Профили</h1>
+
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">Номер</th>
+        <th scope="col">Име</th>
+        <th scope="col">Потребителско име</th>
+        <th scope="col"></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row" >1</th>
+        <td >Mark</td>
+        <td>Otto</td>
+        <td><a class="btn btn-secondary">Изтрий</a></td>
+      </tr>
+      </tbody>
+    </table>
+  
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

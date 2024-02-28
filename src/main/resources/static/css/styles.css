@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  font-family: Philospoher;
+  background-color: #ededed;
+}
+.header-section,
+main {
+  width: 85%;
+  margin: auto;
+}
+nav .navbar-brand {
+  font-family: Jura;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.logo {
+  font-family: Jura;
+  font-weight: bolder;
+}
+nav .nav-item {
+  font-size: 24px;
+}
+nav .logout{
+  font-size: 24px;
+  font-family: Philospoher;
+
+}
+.header-section {
+  display: flex;
+  flex-direction: row;
+  height: 700px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 8px;
+}
+.header-image img {
+  max-height: 700px;
+}
+.header-info {
+  padding: 90px;
+}
+.header-info h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.header-info p {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.header-info i {
+  padding-left: 10px;
+}
+.header-info button {
+  font-size: 22px;
+}
+.advantages {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-areas:
+    "advantage1 advantage2 advantage3"
+    "advantage4 advantage5 advantage6";
+  gap: 50px;
+}
+.advantage-article1 {
+  grid-area: advantage1;
+}
+.advantage-article2 {
+  grid-area: advantage2;
+}
+.advantage-article3 {
+  grid-area: advantage3;
+}
+.advantage-article4 {
+  grid-area: advantage4;
+}
+.advantage-article5 {
+  grid-area: advantage5;
+}
+.advantage-article6 {
+  grid-area: advantage6;
+}
+.advantages article {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+.advantages article h1 {
+  margin-bottom: 30px;
+}
+.advantages article h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.advantages article p {
+  font-size: 22px;
+}
+footer {
+  background-color: white;
+  height: 130px;
+  text-align: center;
+}
+footer span {
+  font-size: 30px;
+}
+
+.social-media i {
+  font-size: 25px;
+  margin-left: 6px;
+}
+.social-media i:hover {
+  color: rgb(79, 77, 77);
+}
+.copy-write {
+  font-size: 20px;
+}
+.register h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+label {
+  font-size: 20px;
+}
+.login h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+footer {
+  align-items: last baseline;
+}
+.about-us h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.about-us-info {
+  font-size: 25px;
+  margin-bottom: 120px;
+}
+.about-us-info p {
+  margin-bottom: 18px;
+}
+.about-us main {
+  width: 70%;
+}
+.ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ul li:hover {
+  color: rgb(98, 98, 98);
+}
+.about-us footer {
+  background-color: transparent;
+}
+.p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.add-robot h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.etymology-info {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.etymology-info p {
+  margin-bottom: 40px;
+  line-height: 30px;
+  font-size: 24px;
+}
+.etymology h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.etymology footer {
+  background-color: transparent;
+}
+.history h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.history-info {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.history-info p {
+  line-height: 32px;
+  font-size: 24px;
+}
+.history footer {
+  background-color: transparent;
+}
+.directions h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.directions-info {
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+  margin-bottom: 100px;
+  line-height: 34px;
+}
+.directions-info p {
+  padding-bottom: 20px;
+}
+.directions-info li {
+  padding-bottom: 16px;
+}
+.directions footer {
+  background-color: transparent;
+}
+.components h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.components-info {
+  width: 75%;
+  margin: auto;
+  font-size: 20px;
+}
+.components-info a {
+  color: black;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+.components-list li li {
+  font-weight: bold;
+}
+.components-list p {
+  font-weight: normal;
+}
+.components-list {
+  margin-bottom: 70px;
+}
+.components footer {
+  background-color: transparent;
+}
+.dropdown-item {
+  font-size: 18px;
+}
+.usage h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.usage-info {
+  width: 80%;
+  margin: auto;
+  font-size: 22px;
+  margin-bottom: 80px;
+}
+.usage-info p {
+  padding-bottom: 16px;
+}
+.usage footer {
+  background-color: transparent;
+}
+.profiles h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.table {
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+}
+.robot {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  padding: 35px;
+  border-radius: 10px;
+}
+.all-robots-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: auto;
+  gap: 30px;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+.all-robots-info p {
+  font-size: 18px;
+  padding-top: 12px;
+}
+.all-robots h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.all-robots footer{
+  background-color: transparent ;
+}
+.forum h1{
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.forum footer{
+  background-color: transparent;
+}
+.discussion{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  margin: 60px auto 100px;
+}
+.discussion-info{
+  background-color: white;
+  box-shadow: 20px 19px 1px white;;
+  height: 480px;
+  padding: 70px;
+  border-radius: 6px;
+
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("/images/1520089795303.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 85%;
+  margin:auto;
+}
+.discussion-info p{
+  width: 70%;
+  font-size: 22px;
+  margin-top: 20px;
+}
+.discussion-info a{
+  color: black;
+}
+#rememberme{
+  width: 5px;
+  text-align: center;
+}

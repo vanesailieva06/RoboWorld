@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Регистрация</title>
+  <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous"
+  />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+  />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg" th:fragment="nav">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" href="#"
+    >РобоСвят <i class="fa-solid fa-robot"></i
+    ></a>
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" th:href="@{/}">Начало</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/users/login}">Вход</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/robots/add}">Създай своя робот</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/forum/all}">Форум</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/robots/all}">Всички роботи</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/users/profiles}">Профили</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Какво е Роботиката?
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" th:href="@{/robotics/etymology}">Етимология</a></li>
+            <li><a class="dropdown-item" th:href="@{/robotics/history}">История</a></li>
+            <li><a class="dropdown-item" th:href="@{/robotics/directions}">Направления</a></li>
+            <li><a class="dropdown-item" th:href="@{/robotics/components}">Компоненти</a></li>
+            <li><a class="dropdown-item" th:href="@{/robotics/usage}">Употреба</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/about-us}">За нас</a>
+        </li>
+        <li class="nav-item">
+          <form th:method="post"
+                th:action="@{/users/logout}">
+            <input type="submit" class="btn logout nav-link" value="Изход"/>
+          </form>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<footer th:fragment="footer">
+      <span class="logo article-logo"
+      >РобоСвят<i class="fa-solid fa-robot"></i
+      ></span>
+  <div class="social-media">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </div>
+  <span class="copy-write">&copy Vanesa Ilieva 2024</span>
+</footer>
+</body>
+</html>
