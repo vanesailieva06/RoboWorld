@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="~{fragments/commons::head}">
+  </head>
+  <body class="all-robots">
+    <nav th:replace="~{fragments/commons::nav}">
+
+    </nav>
+
+    <h1>Всички роботи</h1>
+    <section class="all-robots-info">
+      <div class="robot" id="robotList" th:each="robot : ${robots}"
+      th:object="${robot}">
+        <div class="robot-info" id="robot-info">
+          <h2 class="name-heading" id="name-heading" th:text="|Name: *{name}|">Name Heading</h2>
+          <h3 class="color-heading" id="color-heading" th:text="|Color: *{color}|">Example color</h3>
+          <h4 class="purpose-heading" id="purpose-heading" th:text="|Purpose: *{purpose}|">Example puprose</h4>
+          <h4 class="talking-heading" id="talking-heading" th:text="*{speaking}">Example talking</h4>
+          <p class="description-robot" id="description-robot" th:text="*{description}">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magni
+            vero nostrum temporibus enim dolore, quae facere error repudiandae a
+            deleniti minima nisi expedita animi praesentium at assumenda autem
+            ratione? Quasi placeat corporis laboriosam, id perferendis
+            repudiandae ab magni
+          </p>
+        </div>
+        <div class="img-robot" id="img-div">
+          <img src="/images/robot.jpg" alt="img-robot" id="img-robot" />
+        </div>
+      </div>
+
+    </section>
+
+    <footer th:replace="~{fragments/commons::footer}">
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
