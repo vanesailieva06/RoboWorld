@@ -9,12 +9,12 @@
 
       <section class="header-section">
         <article class="header-info">
-          <h1>Поеми контрола над Роботиката!</h1>
-          <p>
+          <h1 th:text="#{index.h1}">Поеми контрола над Роботиката!</h1>
+          <p th:text="#{index.p-register}">
             Регистрирай се, създай свой собствен робот и разбери повече за
-            Роботиката с <span class="logo">РобоСвят</span>
+            Роботиката с <span class="logo" th:text="#{app.title}">РобоСвят</span>
           </p>
-          <a th:href="@{/users/register}" type="button" class="btn btn-primary btn-lg">
+          <a th:text="#{index.register}" th:href="@{/users/register}" type="button" class="btn btn-primary btn-lg">
             Регистрирай се <i class="fa-solid fa-arrow-right"></i>
           </a>
         </article>
@@ -26,32 +26,32 @@
     <main>
       <section class="advantages">
         <article class="advantage-article1">
-          <h1>Предимства на <span class="logo article-logo">РобоСвят</span></h1>
-          <a th:href="@{/users/register}" type="button" class="btn btn-primary">
+          <h1 th:text="#{index.advantageH1}">Предимства на <span class="logo article-logo" th:text="#{app.title}">РобоСвят</span></h1>
+          <a th:text="#{index.register}" th:href="@{/users/register}" type="button" class="btn btn-primary">
             Регистрирай се <i class="fa-solid fa-arrow-right"></i>
           </a>
         </article>
         <article class="advantage-article2">
-          <h3>Създаване на собствен робот</h3>
-          <p>
+          <h3 th:text="#{index.creatRobotH3}">Създаване на собствен робот</h3>
+          <p th:text="#{index.pCreateRobot}">
             Имате свободата да направите робот и да го споделите с останалите
           </p>
         </article>
         <article class="advantage-article3">
-          <h3>Лесен достъп</h3>
-          <p>Насладете се на удосбството в сайта ни!</p>
+          <h3 th:text="#{index.easyAccessH3}">Лесен достъп</h3>
+          <p th:text="#{index.easyAccessP}">Насладете се на удосбството в сайта ни!</p>
         </article>
         <article class="advantage-article4">
-          <h3>Информация за Роботиката</h3>
-          <p>Може да намерите разнообразна информация за Роботиката</p>
+          <h3 th:text="#{index.infoH3}">Информация за Роботиката</h3>
+          <p th:text="#{index.infoP}">Може да намерите разнообразна информация за Роботиката</p>
         </article>
         <article class="advantage-article5">
-          <h3>Достъп до форум</h3>
-          <p>Разменете и обсъдете информация в нашия форум</p>
+          <h3 th:text="#{index.forumH3}">Достъп до форуми</h3>
+          <p th:text="#{index.forumP}">Разменете и обсъдете информация в нашите форуми</p>
         </article>
         <article class="advantage-article6">
-          <h3>Сигурност</h3>
-          <p>Предлагаме сигурност и надежност за всеки потребител</p>
+          <h3 th:text="#{index.securityH3}">Сигурност</h3>
+          <p th:text="#{index.securityP}">Предлагаме сигурност и надежност за всеки потребител</p>
         </article>
       </section>
     </main>

@@ -8,23 +8,23 @@
       <h1 class="mb-5 mt-3 text-center">Вход</h1>
       <form class="w-25 m-auto login-form" th:method="post" th:action="@{/users/login}">
           <div class="mb-3">
-            <label for="username" class="form-label">Потребителско име</label>
+            <label for="username" th:text="#{login.username}" class="form-label">Потребителско име</label>
             <input type="text" class="form-control" name="username" id="username">
           </div>
           <div class="mb-3">
-            <label for="password" class="form-label">Парола</label>
+            <label for="password"  th:text="#{login.password}" class="form-label">Парола</label>
             <input type="password" name="password" class="form-control" id="password">
           </div>
-          <button type="submit" class="btn btn-primary btn-lg">Влез</button>
+          <button th:text="#{login.button}" type="submit" class="btn btn-primary btn-lg">Влез</button>
           <div>
-              <label for="rememberme" class="font-weight-bold remember">Запомни ме</label>
+              <label th:text="#{login.remember}" for="rememberme" class="font-weight-bold remember">Запомни ме</label>
               <input  id="rememberme"
                       name="rememberme"
                       type= checkbox
                       class="form-control"/>
           </div>
   
-          <a th:href="@{/users/register}">Нямаш профил? Регистрирай се <i class="fa-solid fa-arrow-right"></i></a>
+          <a th:text="#{login.a}" th:href="@{/users/register}">Нямаш профил? Регистрирай се <i class="fa-solid fa-arrow-right"></i></a>
         </form>
 
       

@@ -39,6 +39,8 @@ spring:
   #cloud-name:
   #  main:
   #    allow-circular-references: true
+  messages:
+    basename: lang/messages
 logging:
   level:
     org.hibernate.SQL: DEBUG

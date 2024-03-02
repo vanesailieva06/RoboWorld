@@ -6,4 +6,8 @@ import java.util.List;
 
 public interface ForumService {
     List<ForumViewDto> getAll();
+
+    ForumViewDto findById(Long id);
+
+    List<ForumViewDto> findForumsWithoutThis(Long id);
 }

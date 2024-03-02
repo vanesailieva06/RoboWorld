@@ -24,4 +24,18 @@ public class ForumServiceImpl implements ForumService {
         return forumRepository.findAll().stream().map(forum -> modelMapper.map(forum, ForumViewDto.class))
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public ForumViewDto findById(Long id) {
+
+        return modelMapper.map(forumRepository.findById(id).orElseThrow(), ForumViewDto.class);
+    }
+
+    @Override
+    public List<ForumViewDto> findForumsWithoutThis(Long id) {
+
+        return forumRepository.findAllByIdIsNot(id).stream().map(
+                forum -> modelMapper.map(forum, ForumViewDto.class)
+        ).collect(Collectors.toList());
+    }
 }
