@@ -338,7 +338,7 @@ footer {
 }
 .discussion-info{
   background-color: white;
-  box-shadow: 20px 19px 1px white;;
+  box-shadow: 20px 19px 1px white;
   height: 480px;
   padding: 70px;
   border-radius: 6px;
@@ -360,4 +360,91 @@ footer {
 #rememberme{
   width: 5px;
   text-align: center;
+}
+.forum-details-div h1{
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.forum-details-div p{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.forum-details{
+  width: 80%;
+  margin:auto;
+}
+.forum-details footer{
+  margin-top: 40px;
+  background-color: transparent;
+}
+.other-forums{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+
+  margin-top: 100px;
+}
+.other-forum-div{
+  background-color: white;
+  border-radius: 6px;
+  box-shadow:15px 9px 1px black;
+
+}
+.other-forum-div img{
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.other-forum-div a{
+  text-decoration: none;
+  color: black;
+}
+.other-forum-info{
+  padding: 20px;
+}
+.other-forum-info p{
+  font-size: 20px;
+}
+.other-forum-info h4{
+  font-size: 28px;
+}
+.btn-post-comment{
+  margin-top: 18px;
+}
+#commentCtnr p{
+  font-size: 22px;
+}
+#commentCtnr h4{
+  font-size: 28px;
+}
+#commentCtnr div{
+  margin-top: 30px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  align-items: flex-end;
+}
+#commentCtnr div h4{
+  margin-bottom: 10px;
+}
+#message{
+  font-size: 20px;
+}
+.comments{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn-reply-comment{
+  font-size: 18px;
+  align-self: flex-end;
+}
+.btn-reply-comment:hover{
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+.switch-lang{
+  border: none;
 }

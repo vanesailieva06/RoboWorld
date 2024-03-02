@@ -7,34 +7,34 @@
     </nav>
 
     <main>
-      <h1>За Нас</h1>
+      <h1 th:text="#{aboutUs.h1}">За Нас</h1>
       <section class="about-us-section">
         <div class="about-us-info">
-          <p>
-            Мисията на <span class="logo">РобоСвят</span> е да насърчаваме все
+          <p th:text="#{aboutUs.p1}">
+            Мисията на <span class="logo" th:text="#{app.title}">РобоСвят</span> е да насърчаваме все
             повече хора да се поинтересуват за технологиите в бъдещето, а
             именно- <b>Роботиката</b> . Тук може да развиете вашето въображение и да
             разберете нещо ново за роботиката.
           </p>
-          <p>
-            <span class="logo">РобоСвят</span> освен, че предлага развитие на креативното мислене, предлага и сигурност на всеки потребител.
+          <p th:text="#{aboutUs.p2}">
+            <span class="logo" th:text="#{app.title}">РобоСвят</span> освен, че предлага развитие на креативното мислене, предлага и сигурност на всеки потребител.
             Винаги може да намерите <b>сигурност и удосбство</b>!
           </p>
           <div class="ul">
             <ul>
-                <b>Развийте:</b> 
-                <li>Мисленето си <i class="fa-solid fa-brain"></i></li>
+                <b th:text="#{aboutUs.develop}">Развийте:</b>
+                <li th:text="#{aboutUs.developLi}">Мисленето си <i class="fa-solid fa-brain"></i></li>
             </ul>
             <ul>
-                <b>Научете:</b>
-                <li>Информация за бъдещето <i class="fa-brands fa-leanpub"></i></li>
+                <b th:text="#{aboutUs.learn}">Научете:</b>
+                <li th:text="#{aboutUs.learnLi}">Информация за бъдещето <i class="fa-brands fa-leanpub"></i></li>
             </ul>
             <ul>
-                <b>Осигурете си:</b>
-                <li>Сигурност и удосбство <i class="fa-solid fa-shield-halved"></i></li>
+                <b th:text="#{aboutUs.ensure}">Осигурете си:</b>
+                <li th:text="#{aboutUs.ensureLi}">Сигурност и удосбство <i class="fa-solid fa-shield-halved"></i></li>
             </ul>
           </div>
-          <p class="p">Включи се в <span class="logo">РобоСвят</span>!</p>
+          <p class="p" th:text="#{aboutUs.join}">Включи се в <span th:text="#{app.title}" class="logo">РобоСвят</span>!</p>
         </div>
 
         <div class="about-us-img"></div>
