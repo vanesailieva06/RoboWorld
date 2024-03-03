@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/commons::head}">
+</head>
+<body class="forum-details">
+<nav th:replace="~{fragments/commons::nav}"></nav>
+<section class="forum-details-info" th:object="${forumDetails}">
+    <input type="hidden" id="forumId" name="forumId" th:value="*{id}">
+    <div class="forum-details-div">
+        <h1 th:text="*{title}">Forum Title</h1>
+        <p th:text="*{description}">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cupiditate nihil reprehenderit deleniti ut amet quia natus.
+        </p>
+    </div>
+
+
+    <div>
+        <!-- Comments submission -->
+        <form id="commentForm" method="POST"
+              th:action="@{/api/comments/{forumId}(forumId=${id})}">
+            <div class="form-group">
+                <h4 th:text="#{forumDet.commentH4}">Leave a comment </h4>
+                <label th:text="#{forumDet.comment}" for="message">Comment</label>
+                <textarea name="message"
+                          id="message"
+                          cols="30"
+                          rows="4"
+                          class="form-control"
+                          style="background-color: white;"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit"
+                       class="btn btn-post-comment btn-secondary btn-lg"
+                       id="postComment"
+                       th:value="#{forumDet.postComment}"/>
+            </div>
+        </form>
+    </div>
+
+    <div class="comment-section">
+
+        <span id="commentCtnr"><!-- Comments section, filled in by script --></span>
+    </div>
+
+    <div class="other-forums">
+        <div th:each="of : ${otherForums}" class="other-forum-div" th:object="${of}">
+            <img src="/images/1520089795303.jpg">
+            <a th:href="@{/forum/{id}(id = *{id})}">
+            <div class="other-forum-info">
+            <h4 th:text="*{title}">Forum Title</h4>
+            <p th:text="*{description}">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate nihil reprehenderit deleniti ut amet quia natus.</p></div>
+            </a>
+        </div>
+    </div>
+</section>
+<footer th:replace="~{fragments/commons::footer}"></footer>
+<script th:src="@{/js/comments.js}"></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+></script>
+</body>
+</html>
