@@ -13,16 +13,6 @@ VALUES
     (2, 1),
     (1, 2);
 
-INSERT INTO robots (id, color, description, purpose, robot_name, speaking, user_id)
-VALUES
-    (1, 'RED', 'The robot Kenny is very friendly robot. He can speak and it is very smart!', 'HELPFUL','Kenny', 1, 1),
-    (2, 'GREEN', 'Robin can help you with your homework. He cannot speak but he knows everything! ', 'EDUCATIONAL','Robin', 0, 1),
-    (3, 'PINK', 'Jessica knows everything about entertainment. You can go shopping with her!', 'ENTERTAINMENT', 'Jessica', 1, 2),
-    (4, 'BLUE', 'Garry is well-informed about everything. From chemistry to history and politics!', 'INFORMATIONAL','Garry', 0, 1),
-    (5, 'ORANGE', 'Melissa can help you with everything you need. The best robot of all time!', 'HELPFUL', 'Melissa',1, 1),
-    (6, 'YELLOW', 'Frank is like a teacher. He can help you with every task!', 'EDUCATIONAL','Frank', 0, 2),
-    (7, 'RED', 'If you want a robot as a friend, Brian is the best answer! He really enjoys cinema and sport!', 'ENTERTAINMENT','Brian', 1, 1),
-    (8, 'BLUE', 'You want to search easy information from different areas? Then Tiana is the best robot for you!', 'INFORMATIONAL','Tiana', 0, 1);
 
 INSERT INTO forums(id, created, description, title)
 VALUES

@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
   font-family: Philospoher;
-  background-color: #ededed;
+  background-image: url("/images/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header-section,
 main {
   width: 85%;
   margin: auto;
+}
+.fa-robot{
+  font-size: 26px;
+  padding-left: 10px;
 }
 nav .navbar-brand {
   font-family: Jura;
@@ -96,9 +102,10 @@ nav .logout{
   font-size: 22px;
 }
 footer {
-  background-color: white;
+  background-color: transparent;
   height: 130px;
   text-align: center;
+
 }
 footer span {
   font-size: 30px;
@@ -447,4 +454,52 @@ footer {
 }
 .switch-lang{
   border: none;
+}
+.components-info button{
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+}
+#energyUl,#energyP, #devicesUl, #sensibilityUl, #manipulationUl,#movementUl,#otherMovementUl, #interaction-environmentP, #human-environmentUl{
+  display: none;
+}
+.reviews-div{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  width: 90%;
+  margin: auto;
+}
+.reviews{
+  margin-bottom: 80px;
+}
+.review-article{
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  transition: background-color 2s;
+}
+.author-img{
+  height: 120px;
+  width: 100px;
+  padding-bottom: 16px;
+}
+.reviews h1{
+  font-size: 68px;
+  margin-bottom: 24px;
+}
+.review-article p{
+  font-size: 24px;
+}
+.review-article span{
+  font-weight: bold;
+  padding-top: 24px;
+  font-size: 22px;
+}
+
+
+
+.review-article:hover{
+ background-color: rgba(124, 124, 124, 0.99);
 }

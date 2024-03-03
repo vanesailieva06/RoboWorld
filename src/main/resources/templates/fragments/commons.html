@@ -22,9 +22,9 @@
 <body>
 <nav class="navbar navbar-expand-lg" th:fragment="nav">
   <div class="container-fluid">
-    <a th:text="#{app.title}" class="navbar-brand logo" href="#"
-    >РобоСвят <i class="fa-solid fa-robot"></i
-    ></a>
+    <a th:text="#{app.title}" class="navbar-brand logo" href="/"
+    >РобоСвят </a><i class="fa-solid fa-robot"></i
+  >
     <button
             class="navbar-toggler"
             type="button"
@@ -45,14 +45,18 @@
           <a class="nav-link" th:text="#{nav.login}" th:href="@{/users/login}">Вход</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" th:text="#{nav.addRobot}" th:href="@{/robots/add}">Създай своя робот</a>
+          <a class="nav-link" th:text="#{nav.courses}" th:href="@{/courses}">Курсове</a>
+          <ul class="dropdown-menu">
+            <li><a th:text="#{nav.etymology}" class="dropdown-item" th:href="@{/courses/sixToEight}">6-8години</a></li>
+            <li><a th:text="#{nav.history}" class="dropdown-item" th:href="@{/courses/nineTotwelve}">9-12години</a></li>
+            <li><a class="dropdown-item" th:text="#{nav.directions}" th:href="@{/courses/thirteenToFifteen}">13-15години</a></li>
+            <li><a class="dropdown-item" th:text="#{nav.components}" th:href="@{/courses/sixteenToEighteen}">16-18години</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" th:text="#{nav.forum}" th:href="@{/forum/all}">Форум</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" th:text="#{nav.allRobots}" th:href="@{/robots/all}">Всички роботи</a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link" th:text="#{nav.profiles}" th:href="@{/users/profiles}">Профили</a>
         </li>
@@ -90,8 +94,8 @@
 
 <footer th:fragment="footer">
       <span  th:text="#{app.title}" class="logo article-logo"
-      >РобоСвят<i class="fa-solid fa-robot"></i
-      ></span>
+      >РобоСвят</span><i class="fa-solid fa-robot"></i
+>
   <div class="social-media">
     <i class="fa-brands fa-facebook"></i>
     <i class="fa-brands fa-twitter"></i>

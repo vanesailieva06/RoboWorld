@@ -9,11 +9,11 @@
     <h1 th:text="#{components.h1}">Компоненти</h1>
     <section class="components-info">
       <ul class="components-list">
-        <li class="energy">
-          <a th:text="#{components.energySource}" href=""
-            >Източник на енергия </a><i class="fa-solid fa-arrow-down"></i
+        <li class="energy" id="energy">
+          <button id="energy-btn" th:text="#{components.energySource}"
+            >Източник на енергия </button><i class="fa-solid fa-arrow-down"></i
         >
-          <p th:text="#{components.energyP}">
+          <p id="energyP" th:text="#{components.energyP}">
             Най-много се използват (оловно-киселинни) акумулатори като източник
             на енергия. Различни видове батерии могат да послужат като източник
             на енергия за роботите. Оловно-киселинните батерии са безопасни и
@@ -21,7 +21,7 @@
             сребърно-кадмиевите батерии, които са по-малки на обем, но
             по-скъпи.Потенциални източници на енергия могат да бъдат:
           </p>
-          <ul>
+          <ul id="energyUl">
             <li th:text="#{components.energyLi1}">Пневматичен (сгъстени газове)</li>
             <li th:text="#{components.energyLi2}">
               Слънчева енергия (използването на слънчевата енергия и
@@ -33,12 +33,12 @@
             <li th:text="#{components.energyLi6}">Ядрен</li>
           </ul>
         </li>
-        <li class="devices">
-          <a th:text="#{components.driveDevice}" href=""
-            >Задвижващо устройство </a><i class="fa-solid fa-arrow-down"></i
+        <li class="devices" id="devices">
+          <button id="devices-btn" th:text="#{components.driveDevice}"
+            >Задвижващо устройство </button><i class="fa-solid fa-arrow-down"></i
         >
 
-          <ul>
+          <ul id="devicesUl">
             <li >
               <span th:text="#{components.deviceLi1}">Електрически мотори</span>
 
@@ -114,10 +114,10 @@
             </li>
           </ul>
         </li>
-        <li class="sensibility">
-          <a href="" th:text="#{components.sensibility}">Сетивност</a> <i class="fa-solid fa-arrow-down"></i>
+        <li class="sensibility" id="sensibility">
+          <button id="sensibility-btn" th:text="#{components.sensibility}">Сетивност</button> <i class="fa-solid fa-arrow-down"></i>
 
-          <ul>
+          <ul id="sensibilityUl">
             <li>
               <span th:text="#{components.touchLi1}">Допир</span>
 
@@ -146,9 +146,9 @@
             </li>
           </ul>
         </li>
-        <li class="manipulation">
-          <a th:text="#{components.manipulation}" href="">Манипулиране </a><i class="fa-solid fa-arrow-down"></i>
-          <ul>
+        <li class="manipulation" id="manipulation">
+          <button id="manipulation-btn" th:text="#{components.manipulation}">Манипулиране </button><i class="fa-solid fa-arrow-down"></i>
+          <ul id="manipulationUl">
             <li>
               <span th:text="#{components.grippingDevicesLi1}">Механични устройства за захващане</span>
 
@@ -179,9 +179,9 @@
             </li>
           </ul>
         </li>
-        <li class="movements">
-          <a th:text="#{components.movement}" href="">Придвижване</a> <i class="fa-solid fa-arrow-down"></i>
-          <ul>
+        <li class="movements" id="movement">
+          <button id="movements-btn" th:text="#{components.movement}">Придвижване</button> <i class="fa-solid fa-arrow-down"></i>
+          <ul id="movementUl">
             <li>
               <span th:text="#{components.wheelsLi1}">Роботи на колела</span>
 
@@ -209,7 +209,7 @@
               </p>
             </li>
             <li >
-              <span> th:text="#{components.ballsLi4}"Сферични кълба</span>
+              <span th:text="#{components.ballsLi4}">Сферични кълба</span>
 
               <p th:text="#{components.ballsP4}">
                 Някои роботи имат сферична форма и се придвижват, като въртят
@@ -278,11 +278,11 @@
             </li>
           </ul>
         </li>
-        <li class="other-movements">
-          <a th:text="#{components.otherMovements}" href=""
-            >Други методи за придвижване</a> <i class="fa-solid fa-arrow-down"></i
+        <li class="other-movements" id="other-movements">
+          <button id="other-movements-btn" th:text="#{components.otherMovements}"
+            >Други методи за придвижване</button> <i class="fa-solid fa-arrow-down"></i
         >
-          <ul>
+          <ul id="otherMovementUl">
             <li>
               <span th:text="#{components.flyingLi1}">Летене</span>
 
@@ -317,12 +317,12 @@
             </li>
           </ul>
         </li>
-        <li class="interaction-environment">
-          <a th:text="#{components.environment}" href=""
+        <li class="interaction-environment" id="interaction-environment">
+          <button id="interaction-environment-btn" th:text="#{components.environment}"
             >Взаимодействие и навигация с околната среда
-           </a> <i class="fa-solid fa-arrow-down"></i
+           </button> <i class="fa-solid fa-arrow-down"></i
         >
-          <p th:text="#{components.environmentP}">
+          <p id="interaction-environmentP" th:text="#{components.environmentP}">
             Въпреки че значителен процент от роботи днес са или контролирани от
             хора, или работят в статична среда, има повишаване на интереса в
             роботи, които могат да се управляват автономно в динамична среда.
@@ -330,12 +330,12 @@
             софтуер с цел да преодолеят тяхната среда.
           </p>
         </li>
-        <li class="human-environment">
-          <a th:text="#{components.humanEnvironment}" href=""
+        <li class="human-environment" id="human-environment">
+          <button id="environment-btn" th:text="#{components.humanEnvironment}"
             >Човешко-роботско взаимодействие
-            </a><i class="fa-solid fa-arrow-down"></i
+            </button><i class="fa-solid fa-arrow-down"></i
         >
-          <ul>
+          <ul id="human-environmentUl">
             <li>
               <span th:text="#{components.speechLi1}">Разпознаване на говор</span>
 
@@ -401,6 +401,7 @@
     </section>
     <footer th:replace="~{fragments/commons::footer}">
     </footer>
+    <script src="/js/components.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
