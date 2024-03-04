@@ -44,13 +44,14 @@
         <li class="nav-item">
           <a class="nav-link" th:text="#{nav.login}" th:href="@{/users/login}">Вход</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" th:text="#{nav.courses}" th:href="@{/courses}">Курсове</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false" th:text="#{nav.courses}" th:href="@{/courses}">Курсове</a>
           <ul class="dropdown-menu">
-            <li><a th:text="#{nav.etymology}" class="dropdown-item" th:href="@{/courses/sixToEight}">6-8години</a></li>
-            <li><a th:text="#{nav.history}" class="dropdown-item" th:href="@{/courses/nineTotwelve}">9-12години</a></li>
-            <li><a class="dropdown-item" th:text="#{nav.directions}" th:href="@{/courses/thirteenToFifteen}">13-15години</a></li>
-            <li><a class="dropdown-item" th:text="#{nav.components}" th:href="@{/courses/sixteenToEighteen}">16-18години</a></li>
+            <li><a th:text="#{nav.sixToEight}" class="dropdown-item" th:href="@{/courses/sixToEight}">6-8години</a></li>
+            <li><a th:text="#{nav.nineToTwelve}" class="dropdown-item" th:href="@{/courses/nineToTwelve}">9-12години</a></li>
+            <li><a class="dropdown-item" th:text="#{nav.thirteenToFifteen}" th:href="@{/courses/thirteenToFifteen}">13-15години</a></li>
+            <li><a class="dropdown-item" th:text="#{nav.sixteenToEighteen}" th:href="@{/courses/sixteenToEighteen}">16-18години</a></li>
           </ul>
         </li>
         <li class="nav-item">

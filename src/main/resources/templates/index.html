@@ -56,42 +56,31 @@
       </section>
       <section class="reviews">
         <h1>Отзиви на потребители</h1>
-        <div class="reviews-div">
-        <article class="review-article first">
-          <img src="/images/download.png" class="author-img">
-          <p>
+        <div class="reviews-div" >
+        <article class="review-article first" th:each="r : ${reviews}" th:object="${r}">
+          <img src="/images/download%20(1).png" class="author-img">
+          <p th:text="*{description}">
             РобоСвят е най-доброто попадение днес!Научих много за роботика и се забавлявах!
             Препоръчвам!
           </p>
            <div>
-             <span>Моника С.</span>
+             <span th:text="*{name}">Моника С.</span>
            </div>
         </article>
-        <article class="review-article second">
-          <img src="/images/images%20(4).png" class="author-img">
-          <p>
-            От както се регистрирах виждането ми към Роботиката се промени коренно.
-            Не се чудете, регистрирайте се!
-          </p>
-          <div>
-          <span>Дейвид А.</span>
-          </div>
 
-        </article>
-        <article class="review-article third">
-          <img src="/images/images%20(5).png" class="author-img">
-          <p>
-            Най-доброто приложение, което съм срещал!
-            Най-много ми хареса форумите, където всеки може да си каже мнението.
-          </p>
-          <div>
-            <span>Мартин О.</span>
-          </div>
-        </article>
         </div>
       </section>
       <section class="add-review">
-
+        <h2 class="text-light">Напиши отзив</h2>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-light">Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example:Ivan Ivanov">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label text-light">Review</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <a href="#">Предай</a>
       </section>
 
     </main>
