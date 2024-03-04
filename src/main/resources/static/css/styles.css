@@ -497,9 +497,76 @@ footer {
   padding-top: 24px;
   font-size: 22px;
 }
-
-
-
 .review-article:hover{
  background-color: rgba(124, 124, 124, 0.99);
+}
+.courses-info h1{
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.courses-info{
+  width: 85%;
+  margin: auto auto 60px;
+}
+.courses-info div{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 90%;
+  margin: auto;
+}
+.courses-article h3{
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+.courses-article p{
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+.see-more{
+  background-color: blue;
+  padding: 16px 32px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  transition: background-color 2s;
+}
+.see-more:hover{
+  background-color: #000080;
+}
+.add-review{
+  width: 60%;
+  background-color: blue;
+  border-radius: 20px;
+  padding: 60px;
+  margin: auto auto 70px;
+}
+.add-review h2{
+  margin-bottom: 30px;
+  font-size: 50px;
+  text-align: center;
+}
+.add-review div{
+  width: 90%;
+  margin: auto auto 18px;
+}
+.add-review a{
+  background-color: white;
+  padding: 14px 28px;
+  color: black;
+  text-decoration: none;
+  border-radius: 50px;
+  display: block;
+  width: 20%;
+  font-size: 22px;
+  margin: auto;
+  text-align: center;
+  transition: all 2s;
+
+}
+.add-review a:hover{
+  background-color: #7c7c7c;
+  color: white
 }
