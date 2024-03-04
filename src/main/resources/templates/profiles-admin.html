@@ -17,11 +17,11 @@
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <th scope="row" >1</th>
-        <td >Mark</td>
-        <td>Otto</td>
-        <td><a th:text="#{profiles.delete}" class="btn btn-secondary">Изтрий</a></td>
+      <tr th:each="u : ${users}" th:object="${u}">
+        <th th:text="*{id}" scope="row" >1</th>
+        <td th:text="*{fullName}">Mark</td>
+        <td th:text="*{username}">Otto</td>
+        <td><a class="delete-user" th:text="#{profiles.delete}" th:href="@{/users/delete/{id}(id = *{id})}">Delete</a></td>
       </tr>
       </tbody>
     </table>

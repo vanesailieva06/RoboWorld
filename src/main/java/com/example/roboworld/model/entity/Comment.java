@@ -1,9 +1,6 @@
 package com.example.roboworld.model.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
@@ -37,7 +34,7 @@ public class Comment extends BaseEntity{
         this.created = created;
     }
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     public User getUser() {
         return user;
     }

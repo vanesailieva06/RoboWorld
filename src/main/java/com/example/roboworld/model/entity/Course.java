@@ -27,7 +27,7 @@ public class Course extends BaseEntity{
         this.ageLimit = ageLimit;
     }
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     public User getLecturer() {
         return lecturer;
     }
