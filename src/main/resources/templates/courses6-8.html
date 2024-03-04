@@ -7,17 +7,9 @@
 <section class="courses6-8-info courses-info">
     <h1>Курсове за деца от 6 до 8 години</h1>
     <div>
-    <article class="courses6-8-article courses-article">
-        <h3>Title Example</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Nesciunt sed maiores iure, odit nam repellat beatae dolorum,
-            consequatur sequi quibusdam sunt molestiae ab recusandae
-            voluptatibus similique?</p>
-        <a class="see-more" th:href="@{/title/id}">See more</a>
-    </article>
-    <article  class="courses6-8-article courses-article">
-        <h3>Title Example</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    <article class="courses6-8-article courses-article" th:each="c : ${course6to8}" th:object="${c}">
+        <h3 th:text="*{title}">Title Example</h3>
+        <p th:text="*{description}">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Nesciunt sed maiores iure, odit nam repellat beatae dolorum,
             consequatur sequi quibusdam sunt molestiae ab recusandae
             voluptatibus similique?</p>
