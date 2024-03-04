@@ -70,17 +70,19 @@
 
         </div>
       </section>
-      <section class="add-review">
+      <section class="add-review" >
         <h2 class="text-light">Напиши отзив</h2>
+        <form th:action="@{/review/add}" th:object="${reviewAddDto}" th:method="post">
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label text-light">Name</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example:Ivan Ivanov">
+          <input th:field="*{name}" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example:Ivan Ivanov">
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label text-light">Review</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea th:field="*{description}" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <a href="#">Предай</a>
+        <button th:href="@{/review/add}">Предай</button>
+        </form>
       </section>
 
     </main>
