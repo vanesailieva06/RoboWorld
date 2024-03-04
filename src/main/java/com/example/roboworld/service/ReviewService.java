@@ -12,4 +12,6 @@ public interface ReviewService
     Page<ReviewViewDto> getAllReviews(Pageable pageable);
 
     void addReview(ReviewAddDto reviewAddDto, UserDetails userDetails);
+
+    void deleteReview(Long id);
 }

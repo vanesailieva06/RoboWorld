@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<html lang="en"  xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
   <head th:replace="~{fragments/commons::head}">
   </head>
   <body>
@@ -12,11 +12,13 @@
           <h1 th:text="#{index.h1}">Поеми контрола над Роботиката!</h1>
           <p th:text="#{index.p-register}">
             Регистрирай се, създай свой собствен робот и разбери повече за
-            Роботиката с <span class="logo" th:text="#{app.title}">РобоСвят</span>
-          </p>
-          <a th:text="#{index.register}" th:href="@{/users/register}" type="button" class="btn btn-primary btn-lg">
-            Регистрирай се <i class="fa-solid fa-arrow-right"></i>
-          </a>
+            Роботиката с
+          </p> <span class="logo" th:text="#{app.title}">РобоСвят</span>
+          <div>
+          <a th:text="#{index.register}" th:href="@{/users/register}" type="button">
+            Регистрирай се
+          </a><i class="fa-solid fa-arrow-right"></i>
+          </div>
         </article>
         <article class="header-image">
           <img src="/images/pngegg (1).png" alt="robot" />
@@ -26,14 +28,16 @@
     <main>
       <section class="advantages">
         <article class="advantage-article1">
-          <h1 th:text="#{index.advantageH1}">Предимства на <span class="logo article-logo" th:text="#{app.title}">РобоСвят</span></h1>
-          <a th:text="#{index.register}" th:href="@{/users/register}" type="button" class="btn btn-primary">
-            Регистрирай се <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <h1 th:text="#{index.advantageH1}">Предимства на </h1><span class="logo article-logo" th:text="#{app.title}">РобоСвят</span>
+          <div>
+            <a th:text="#{index.register}" th:href="@{/users/register}" type="button">
+              Регистрирай се
+            </a><i class="fa-solid fa-arrow-right"></i>
+          </div>
         </article>
         <article class="advantage-article2">
-          <h3 th:text="#{index.creatRobotH3}">Създаване на собствен робот</h3>
-          <p th:text="#{index.pCreateRobot}">
+          <h3 th:text="#{index.coursesH3}">Създаване на собствен робот</h3>
+          <p th:text="#{index.coursesP}">
             Имате свободата да направите робот и да го споделите с останалите
           </p>
         </article>
@@ -66,11 +70,12 @@
            <div>
              <span th:text="*{name}">Моника С.</span>
            </div>
+          <a  th:href="@{/review/delete/{id}(id=*{id})}" sec:authorize="hasRole('Admin')">Delete Review</a>
         </article>
 
         </div>
       </section>
-      <section class="add-review" >
+      <section class="add-review" sec:authorize="isAuthenticated()" >
         <h2 class="text-light">Напиши отзив</h2>
         <form th:action="@{/review/add}" th:object="${reviewAddDto}" th:method="post">
         <div class="mb-3">

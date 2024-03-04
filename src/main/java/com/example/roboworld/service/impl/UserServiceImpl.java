@@ -1,6 +1,7 @@
 package com.example.roboworld.service.impl;
 
 import com.example.roboworld.model.dto.UserRegisterDto;
+import com.example.roboworld.model.dto.UsersViewDto;
 import com.example.roboworld.model.entity.Role;
 import com.example.roboworld.model.entity.User;
 import com.example.roboworld.model.entity.enums.RoleType;
@@ -10,8 +11,10 @@ import com.example.roboworld.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -41,5 +44,18 @@ public class UserServiceImpl implements UserService {
         roleRepository.save(role);
         user.setRoles(List.of(role));
         userRepository.save(user);
+    }
+
+    @Override
+    public List<UsersViewDto> getAll() {
+
+        return userRepository.findAll().stream().map(user -> modelMapper.map(user, UsersViewDto.class))
+                .collect(Collectors.toList());
+    }
+
+    @Transactional
+    @Override
+    public void deleteUser(Long id) {
+        userRepository.deleteById(id);
     }
 }

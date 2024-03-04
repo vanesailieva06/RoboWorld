@@ -12,6 +12,7 @@ public class User extends BaseEntity{
     private String fullName;
     private String password;
     private List<Role> roles;
+    private List<Course> courses;
 
 
     public User() {
@@ -60,5 +61,14 @@ public class User extends BaseEntity{
 
     public void setRoles(List<Role> roles) {
         this.roles = roles;
+    }
+
+    @OneToMany(mappedBy = "lecturer", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+    public List<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
     }
 }

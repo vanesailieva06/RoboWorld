@@ -34,4 +34,9 @@ public class ReviewServiceImpl implements ReviewService {
         review.setUser(userRepository.findByUsername(userDetails.getUsername()).orElseThrow());
         reviewRepository.save(review);
     }
+
+    @Override
+    public void deleteReview(Long id) {
+        reviewRepository.deleteById(id);
+    }
 }

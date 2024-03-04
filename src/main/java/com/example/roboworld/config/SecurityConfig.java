@@ -25,7 +25,7 @@ public class SecurityConfig {
                         authorizeRequests -> authorizeRequests.requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
                                 // Allow anyone to see the home page, the registration page and the login form
                                 .requestMatchers(EndpointRequest.toAnyEndpoint()).permitAll()
-                                .requestMatchers("/", "/users/login", "/users/register", "/users/login-error").permitAll()
+                                .requestMatchers("/", "/users/login", "/users/register", "/users/login-error", "/about-us").permitAll()
 //                        .requestMatchers(HttpMethod.GET, "/offer/**").permitAll() authenticated
                                 .requestMatchers("/error").permitAll()
                                 // all other requests are authenticated.
