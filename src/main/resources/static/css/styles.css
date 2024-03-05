@@ -352,7 +352,7 @@ footer {
 .discussion-info{
   background-color: white;
   box-shadow: 20px 19px 1px white;
-  height: 480px;
+  height: 400px;
   padding: 70px;
   border-radius: 6px;
 
@@ -361,6 +361,16 @@ footer {
   background-size: cover;
   width: 85%;
   margin:auto;
+  transition: all 2s;
+}
+.discussion-info:hover{
+  color: white;
+  box-shadow:  20px 19px 1px black;
+  height: 430px;
+  border-radius: 20px;
+}
+.discussion-info a:hover{
+  color: white;
 }
 .discussion-info p{
   width: 70%;
@@ -369,6 +379,7 @@ footer {
 }
 .discussion-info a{
   color: black;
+  transition: color 2s;
 }
 #rememberme{
   width: 5px;
@@ -381,8 +392,10 @@ footer {
   margin-bottom: 20px;
 }
 .forum-details-div p{
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 30px;
+  color: black;
+  transition: color 2s;
 }
 .forum-details{
   width: 80%;
@@ -402,9 +415,19 @@ footer {
 .other-forum-div{
   background-color: white;
   border-radius: 6px;
-  box-shadow:15px 9px 1px black;
-
+  color: black;
+  box-shadow:15px 9px 1px #000000;
+  transition: all 2s;
 }
+.other-forum-div:hover{
+  background-color: azure;
+  border-radius: 20px;
+  box-shadow: 15px 9px 1px #2f2f2f;;
+}
+#message{
+  width: 70%;
+}
+
 .other-forum-div img{
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -433,13 +456,20 @@ footer {
 }
 #commentCtnr div{
   margin-top: 30px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 6px;
-  align-items: flex-end;
+  background-color: #7373ff;
+  color: white;
+  padding: 30px;
+  border-radius: 25px;
+  transition: all 2s;
+  width: 70%;
+}
+#commentCtnr div:hover{
+  background-color: dimgray;
+  border-radius: 50px;
 }
 #commentCtnr div h4{
   margin-bottom: 10px;
+  margin-right: 30px;
 }
 #message{
   font-size: 20px;
@@ -663,4 +693,10 @@ footer {
 }
 .delete-user:hover{
   background-color: navy;
+}
+.ul-footer{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 22px;
 }

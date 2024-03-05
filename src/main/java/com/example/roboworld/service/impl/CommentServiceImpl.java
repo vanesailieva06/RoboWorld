@@ -43,7 +43,7 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     public List<CommentViewDto> getComments(Long forumId) {
-        return commentRepository.findAllByForum_Id(forumId).stream().map(
+        List<CommentViewDto> collect = commentRepository.findAllByForum_Id(forumId).stream().map(
                 comment -> {
                     CommentViewDto commentViewDto = modelMapper.map(comment, CommentViewDto.class);
                     commentViewDto.setUser(comment.getUser().getUsername());
@@ -51,5 +51,6 @@ public class CommentServiceImpl implements CommentService {
                     return commentViewDto;
                 }
         ).collect(Collectors.toList());
+        return collect;
     }
 }

@@ -34,7 +34,7 @@ public class Comment extends BaseEntity{
         this.created = created;
     }
 
-    @ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+    @ManyToOne()
     public User getUser() {
         return user;
     }

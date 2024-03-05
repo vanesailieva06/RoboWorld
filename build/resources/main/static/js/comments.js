@@ -78,21 +78,11 @@ async function postFormDataAsJson({url, formData}) {
 
 function asComment(c) {
     let commentHtml = `<div id="commentCntr-${c.id}" class="comments">`
-    commentHtml += `<div>`
     commentHtml += `<h4>${c.user}</h4>`
     commentHtml += `<p>${c.message}</p>`
     commentHtml += `</div>`
-    commentHtml += `<div class="form-group reply-div">
-                <input type="submit"
-                       class="btn btn-reply-comment"
-                       id="replyComment"
-                       value="Reply Comment"/>
-            </div>`
-    commentHtml += `</div>`
 
-
-    let replyInput = document.getElementById("replyComment");
-    //todo
+    return commentHtml
 }
 
 fetch(`http://localhost:8080/api/comments/${forumId}`).
