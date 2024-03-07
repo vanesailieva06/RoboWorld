@@ -15,7 +15,7 @@ public class Comment extends BaseEntity{
     public Comment() {
     }
 
-    @Column(columnDefinition = "TEXT")
+    @Column()
     public String getDescription() {
         return description;
     }
@@ -34,7 +34,7 @@ public class Comment extends BaseEntity{
         this.created = created;
     }
 
-    @ManyToOne()
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     public User getUser() {
         return user;
     }
