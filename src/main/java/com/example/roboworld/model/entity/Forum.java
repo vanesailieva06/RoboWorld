@@ -1,10 +1,9 @@
 package com.example.roboworld.model.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "forums")
@@ -12,6 +11,7 @@ public class Forum extends BaseEntity{
     private String title;
     private String description;
     private LocalDateTime created;
+    private List<Comment> comments;
 
     public Forum() {
     }
@@ -25,7 +25,7 @@ public class Forum extends BaseEntity{
         this.title = title;
     }
 
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Column(nullable = false)
     public String getDescription() {
         return description;
     }
@@ -41,5 +41,13 @@ public class Forum extends BaseEntity{
 
     public void setCreated(LocalDateTime created) {
         this.created = created;
+    }
+    @OneToMany(mappedBy = "forum", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
     }
 }

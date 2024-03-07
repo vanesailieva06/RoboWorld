@@ -1,5 +1,6 @@
 package com.example.roboworld.config;
 
+import com.example.roboworld.model.entity.enums.RoleType;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
@@ -28,6 +29,8 @@ public class SecurityConfig {
                                 .requestMatchers("/", "/users/login", "/users/register", "/users/login-error", "/about-us").permitAll()
 //                        .requestMatchers(HttpMethod.GET, "/offer/**").permitAll() authenticated
                                 .requestMatchers("/error").permitAll()
+                                .requestMatchers("/users/profiles", "/users/delete/{id}").hasRole(RoleType.Admin.name())
+
                                 // all other requests are authenticated.
                                 .anyRequest().authenticated()
                 )
