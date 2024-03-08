@@ -111,6 +111,7 @@ class AdminControllerTest {
     @WithMockUser(roles = "Admin", username = TEST_ADMIN_USERNAME)
     public void deleteProfileWithAdmin() throws Exception{
         User testAdmin = testDataUserUtil.createTestAdmin(TEST_ADMIN_USERNAME);
+        Assertions.assertEquals(1, userRepository.count());
         mockMvc.perform(get("/users/delete/{id}", testAdmin.getId())
                 .with(csrf()))
                 .andExpect(status().is3xxRedirection())

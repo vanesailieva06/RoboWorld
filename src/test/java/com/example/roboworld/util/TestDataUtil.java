@@ -58,7 +58,7 @@ public class TestDataUtil {
         user.setPassword("1234");
         user.setEmail("111@123");
         user.setFullName("Test Testov");
-        user.setUsername("user");
+        user.setUsername("test");
         review.setUser(user);
         review.setDescription("testtttttttttt");
         review.setName(name);

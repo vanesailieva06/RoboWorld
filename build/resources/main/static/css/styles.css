@@ -43,7 +43,7 @@ nav .logout{
   border-radius: 8px;
 }
 .header-image img {
-  max-height: 700px;
+  height: 700px;
 }
 .header-info {
   padding: 90px;
@@ -647,7 +647,7 @@ footer {
   padding-right: 12px;
 }
 .header-info div{
-  width: 20%;
+  width: 22%;
   background-color: blue;
   padding: 10px 20px;
   border-radius: 10px;
@@ -665,7 +665,7 @@ footer {
   color: white;
 }
 .advantage-article1 div{
-  width: 30%;
+  width: 32%;
   background-color: blue;
   padding: 10px 20px;
   border-radius: 10px;
@@ -699,4 +699,15 @@ footer {
   justify-content: space-evenly;
   list-style: none;
   font-size: 22px;
+}
+.responsive-nav{
+  display: none;
+  background-color: transparent;
+}
+.responsive-nav h5{
+  font-size: 30px;
+  font-family: Jura;
+}
+.login-form, .register-form{
+  width: 25%;
 }
