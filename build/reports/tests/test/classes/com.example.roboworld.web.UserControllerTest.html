@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - UserControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>UserControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.roboworld.web.html">com.example.roboworld.web</a> &gt; UserControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.370s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testRegisterUser()"></a>
+<h3 class="failures">testRegisterUser()</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;6&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:166)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:161)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:632)
+	at app//com.example.roboworld.web.UserControllerTest.testRegisterUser(UserControllerTest.java:51)
+	at java.base@20.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.2.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@20.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@20.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@20.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.2.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testRegisterUser()</td>
+<td class="failures">0.370s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-03-08T18:59:10.241+02:00  INFO 26356 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.roboworld.web.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-08T18:59:10.243+02:00  INFO 26356 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.roboworld.RobotWorldApplication for test class com.example.roboworld.web.UserControllerTest
+2024-03-08T18:59:10.251+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5757ef9b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58da6f7d, org.springframework.security.web.context.SecurityContextHolderFilter@207512c3, org.springframework.security.web.header.HeaderWriterFilter@376aaeec, org.springframework.web.filter.CorsFilter@2d0f850, org.springframework.security.web.csrf.CsrfFilter@61b5c8a3, org.springframework.security.web.authentication.logout.LogoutFilter@2d0ed017, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b517988, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60f10f6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c995eae, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7d3d89fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62a30701, org.springframework.security.web.access.ExceptionTranslationFilter@2779acb2, org.springframework.security.web.access.intercept.AuthorizationFilter@bcf8bd7]] (1/1)
+2024-03-08T18:59:10.252+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /users/register
+2024-03-08T18:59:10.252+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/14)
+2024-03-08T18:59:10.252+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/14)
+2024-03-08T18:59:10.252+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/14)
+2024-03-08T18:59:10.252+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/14)
+2024-03-08T18:59:10.252+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CorsFilter (5/14)
+2024-03-08T18:59:10.252+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CsrfFilter (6/14)
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (7/14)
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Ant [pattern='/users/logout', POST]
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (8/14)
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Did not match request to Ant [pattern='/users/login', POST]
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (9/14)
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : matchingRequestParameterName is required for getMatchingRequest to lookup a value, but not provided
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (10/14)
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RememberMeAuthenticationFilter (11/14)
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (12/14)
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (13/14)
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (14/14)
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Authorizing SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3b73cc75]
+2024-03-08T18:59:10.253+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Checking authorization on SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3b73cc75] using org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$$Lambda$1543/0x000002ecc72289d0@c4fad0e
+2024-03-08T18:59:10.254+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /users/register
+2024-03-08T18:59:10.323+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2024-03-08T18:59:10.323+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) &lt;- [pesho]
+2024-03-08T18:59:10.553+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into roles (role_type,id) values (?,default)
+2024-03-08T18:59:10.554+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) &lt;- [User]
+2024-03-08T18:59:10.555+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users (email,full_name,password,username,id) values (?,?,?,?,default)
+2024-03-08T18:59:10.555+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) &lt;- [pesho@example.com]
+2024-03-08T18:59:10.555+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) &lt;- [Petar Petrov]
+2024-03-08T18:59:10.555+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) &lt;- [5574ad12f3c74b336539546e2ff063fc00bb3dccb0e57dadd99da3203dd9fcfcef92843be7a87a46905ac47afdd41365]
+2024-03-08T18:59:10.555+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) &lt;- [pesho]
+2024-03-08T18:59:10.557+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users_roles (user_id,roles_id) values (?,?)
+2024-03-08T18:59:10.557+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [6]
+2024-03-08T18:59:10.558+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) &lt;- [6]
+2024-03-08T18:59:10.560+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-03-08T18:59:10.560+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-03-08T18:59:10.564+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select count(*) from users u1_0
+2024-03-08T18:59:10.567+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name,u1_0.password,u1_0.username from users u1_0
+2024-03-08T18:59:10.569+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-08T18:59:10.570+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [6]
+2024-03-08T18:59:10.571+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-08T18:59:10.571+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [6]
+2024-03-08T18:59:10.572+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-08T18:59:10.573+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [5]
+2024-03-08T18:59:10.575+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-08T18:59:10.576+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [5]
+2024-03-08T18:59:10.577+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-08T18:59:10.578+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [4]
+2024-03-08T18:59:10.579+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-08T18:59:10.579+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [4]
+2024-03-08T18:59:10.581+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-08T18:59:10.581+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [3]
+2024-03-08T18:59:10.583+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-08T18:59:10.585+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [3]
+2024-03-08T18:59:10.585+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-08T18:59:10.587+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [2]
+2024-03-08T18:59:10.588+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-08T18:59:10.589+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [2]
+2024-03-08T18:59:10.590+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-08T18:59:10.591+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [1]
+2024-03-08T18:59:10.592+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-08T18:59:10.593+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [1]
+2024-03-08T18:59:10.600+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users_roles where user_id=?
+2024-03-08T18:59:10.601+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [1]
+2024-03-08T18:59:10.601+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users_roles where user_id=?
+2024-03-08T18:59:10.602+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [2]
+2024-03-08T18:59:10.602+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users_roles where user_id=?
+2024-03-08T18:59:10.602+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [3]
+2024-03-08T18:59:10.602+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users_roles where user_id=?
+2024-03-08T18:59:10.603+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [4]
+2024-03-08T18:59:10.603+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users_roles where user_id=?
+2024-03-08T18:59:10.603+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [5]
+2024-03-08T18:59:10.603+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users_roles where user_id=?
+2024-03-08T18:59:10.604+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [6]
+2024-03-08T18:59:10.605+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users where id=?
+2024-03-08T18:59:10.605+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [1]
+2024-03-08T18:59:10.606+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users where id=?
+2024-03-08T18:59:10.607+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [2]
+2024-03-08T18:59:10.608+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users where id=?
+2024-03-08T18:59:10.608+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [3]
+2024-03-08T18:59:10.609+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users where id=?
+2024-03-08T18:59:10.609+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [4]
+2024-03-08T18:59:10.610+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users where id=?
+2024-03-08T18:59:10.611+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [5]
+2024-03-08T18:59:10.611+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from users where id=?
+2024-03-08T18:59:10.612+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [6]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /users/register
+       Parameters = {email=[pesho@example.com], fullName=[Petar Petrov], username=[pesho], password=[1234], confirmPassword=[1234], _csrf=[uKRMnMuAI7qLEzA_zi74CfgNz5Yg6XosnW1Mbg3q2yivtz4625R-qvKyR96mKghcqwPMbcE64q8U2xkBrFouWj2P7BucgFhZ]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.roboworld.web.UserController
+           Method = com.example.roboworld.web.UserController#confirmRegister(UserRegisterDto, RedirectAttributes, BindingResult)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:login
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Language:&quot;en&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;, Location:&quot;login&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = login
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at Mar 8, 2024, 6:59:15 PM</p>
+</div>
+</div>
+</body>
+</html>

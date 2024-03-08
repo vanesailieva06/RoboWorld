@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.roboworld.web.AdminControllerTest" tests="7" skipped="0" failures="1" errors="0" timestamp="2024-03-08T16:59:07" hostname="VANESAILIEVA" time="2.94">
+  <properties/>
+  <testcase name="deleteProfileWithUser()" classname="com.example.roboworld.web.AdminControllerTest" time="1.056"/>
+  <testcase name="deleteProfileWithAdmin()" classname="com.example.roboworld.web.AdminControllerTest" time="0.535">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;2&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:166)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:161)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:632)
+	at app//com.example.roboworld.web.AdminControllerTest.deleteProfileWithAdmin(AdminControllerTest.java:114)
+	at java.base@20.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.2.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@20.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@20.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@20.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@20.0.2.1/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="getProfilesWithUser()" classname="com.example.roboworld.web.AdminControllerTest" time="0.094"/>
+  <testcase name="deleteReviewWithAdmin()" classname="com.example.roboworld.web.AdminControllerTest" time="0.153"/>
+  <testcase name="deleteProfileWithAnonymous()" classname="com.example.roboworld.web.AdminControllerTest" time="0.086"/>
+  <testcase name="getProfilesWithAdmin()" classname="com.example.roboworld.web.AdminControllerTest" time="0.974"/>
+  <testcase name="getProfilesWithAnonymous()" classname="com.example.roboworld.web.AdminControllerTest" time="0.023"/>
+  <system-out><![CDATA[18:58:54.360 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.roboworld.web.AdminControllerTest]: AdminControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:58:54.601 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.roboworld.RobotWorldApplication for test class com.example.roboworld.web.AdminControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2024-03-08T18:58:55.584+02:00  INFO 26356 --- [    Test worker] c.e.roboworld.web.AdminControllerTest    : Starting AdminControllerTest using Java 20.0.2.1 with PID 26356 (started by vanes in D:\RoboWorld)
+2024-03-08T18:58:55.589+02:00  INFO 26356 --- [    Test worker] c.e.roboworld.web.AdminControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-08T18:58:57.918+02:00  INFO 26356 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-08T18:58:58.270+02:00  INFO 26356 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 335 ms. Found 6 JPA repository interfaces.
+2024-03-08T18:58:59.755+02:00  INFO 26356 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-08T18:58:59.866+02:00  INFO 26356 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-03-08T18:58:59.939+02:00  INFO 26356 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-08T18:59:00.419+02:00  INFO 26356 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-08T18:59:00.460+02:00  INFO 26356 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-08T18:59:00.866+02:00  INFO 26356 --- [    Test worker] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2024-03-08T18:59:00.868+02:00  INFO 26356 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@18d396eb
+2024-03-08T18:59:00.871+02:00  INFO 26356 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-08T18:59:03.034+02:00  INFO 26356 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-08T18:59:03.164+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : create table comments (id bigint generated by default as identity (start with 1), created timestamp(6), description varchar(255), forum_id bigint, user_id bigint, primary key (id))
+2024-03-08T18:59:03.169+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : create table courses (id bigint generated by default as identity (start with 1), age_limit varchar(255) check (age_limit in ('SixToEight','NineToTwelve','ThirteenToFifteen','SixteenToEighteen')), description varchar(255), end timestamp(6), start timestamp(6), title varchar(255), lecturer_id bigint, primary key (id))
+2024-03-08T18:59:03.172+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : create table forums (id bigint generated by default as identity (start with 1), created timestamp(6), description varchar(255) not null, title varchar(255) not null, primary key (id))
+2024-03-08T18:59:03.179+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : create table reviews (id bigint generated by default as identity (start with 1), description varchar(255), name varchar(255), user_id bigint, primary key (id))
+2024-03-08T18:59:03.180+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : create table roles (id bigint generated by default as identity (start with 1), role_type varchar(255) check (role_type in ('User','Admin','Lecturer')), primary key (id))
+2024-03-08T18:59:03.183+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : create table users (id bigint generated by default as identity (start with 1), email varchar(255) not null, full_name varchar(255) not null, password varchar(255) not null, username varchar(255) not null, primary key (id))
+2024-03-08T18:59:03.184+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : create table users_roles (user_id bigint not null, roles_id bigint not null)
+2024-03-08T18:59:03.188+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : alter table comments add constraint FKt7clst21fs6p4g71yf83fvw75 foreign key (forum_id) references forums
+2024-03-08T18:59:03.190+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : alter table comments add constraint FK8omq0tc18jd43bu5tjh6jvraq foreign key (user_id) references users
+2024-03-08T18:59:03.192+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : alter table courses add constraint FKit07wvai906qvcttvvg8pi1rr foreign key (lecturer_id) references users
+2024-03-08T18:59:03.195+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : alter table reviews add constraint FKcgy7qjc1r99dp117y9en6lxye foreign key (user_id) references users
+2024-03-08T18:59:03.200+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : alter table users_roles add constraint FKa62j07k5mhgifpp955h37ponj foreign key (roles_id) references roles
+2024-03-08T18:59:03.202+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : alter table users_roles add constraint FK2o0jvgh89lemvvo17cbqvdxaa foreign key (user_id) references users
+2024-03-08T18:59:03.207+02:00  INFO 26356 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-08T18:59:04.567+02:00  WARN 26356 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-08T18:59:04.648+02:00 TRACE 26356 --- [    Test worker] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$WebSecurityEnablerConfiguration=org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$WebSecurityEnablerConfiguration@75b598a5}
+2024-03-08T18:59:04.823+02:00  INFO 26356 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-08T18:59:05.476+02:00  INFO 26356 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-08T18:59:05.732+02:00  INFO 26356 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5757ef9b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58da6f7d, org.springframework.security.web.context.SecurityContextHolderFilter@207512c3, org.springframework.security.web.header.HeaderWriterFilter@376aaeec, org.springframework.web.filter.CorsFilter@2d0f850, org.springframework.security.web.csrf.CsrfFilter@61b5c8a3, org.springframework.security.web.authentication.logout.LogoutFilter@2d0ed017, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b517988, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60f10f6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c995eae, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7d3d89fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62a30701, org.springframework.security.web.access.ExceptionTranslationFilter@2779acb2, org.springframework.security.web.access.intercept.AuthorizationFilter@bcf8bd7]
+2024-03-08T18:59:06.820+02:00  INFO 26356 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-08T18:59:06.820+02:00  INFO 26356 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-08T18:59:06.822+02:00  INFO 26356 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-03-08T18:59:07.054+02:00  INFO 26356 --- [    Test worker] c.e.roboworld.web.AdminControllerTest    : Started AdminControllerTest in 12.177 seconds (process running for 14.519)
+2024-03-08T18:59:07.958+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:08.018+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.role_type from roles r1_0 where r1_0.role_type in (?)
+2024-03-08T18:59:08.020+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [User]
+2024-03-08T18:59:08.063+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into roles (role_type,id) values (?,default)
+2024-03-08T18:59:08.066+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [User]
+2024-03-08T18:59:08.091+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users (email,full_name,password,username,id) values (?,?,?,?,default)
+2024-03-08T18:59:08.092+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [example@com]
+2024-03-08T18:59:08.092+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Test Testov]
+2024-03-08T18:59:08.092+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [1234]
+2024-03-08T18:59:08.092+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [user]
+2024-03-08T18:59:08.106+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users_roles (user_id,roles_id) values (?,?)
+2024-03-08T18:59:08.107+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2024-03-08T18:59:08.107+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [1]
+2024-03-08T18:59:08.117+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2024-03-08T18:59:08.118+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:08.120+02:00 TRACE 26356 --- [    Test worker] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:08.123+02:00 DEBUG 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-03-08T18:59:08.123+02:00 DEBUG 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]] to HttpSession [org.springframework.mock.web.MockHttpSession@5f0669d9]
+2024-03-08T18:59:08.150+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5757ef9b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58da6f7d, org.springframework.security.web.context.SecurityContextHolderFilter@207512c3, org.springframework.security.web.header.HeaderWriterFilter@376aaeec, org.springframework.web.filter.CorsFilter@2d0f850, org.springframework.security.web.csrf.CsrfFilter@61b5c8a3, org.springframework.security.web.authentication.logout.LogoutFilter@2d0ed017, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b517988, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60f10f6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c995eae, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7d3d89fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62a30701, org.springframework.security.web.access.ExceptionTranslationFilter@2779acb2, org.springframework.security.web.access.intercept.AuthorizationFilter@bcf8bd7]] (1/1)
+2024-03-08T18:59:08.151+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /users/delete/1
+2024-03-08T18:59:08.154+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/14)
+2024-03-08T18:59:08.161+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/14)
+2024-03-08T18:59:08.168+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/14)
+2024-03-08T18:59:08.170+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/14)
+2024-03-08T18:59:08.171+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CorsFilter (5/14)
+2024-03-08T18:59:08.174+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CsrfFilter (6/14)
+2024-03-08T18:59:08.175+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.csrf.CsrfFilter         : Did not protect against CSRF since request did not match CsrfNotRequired [TRACE, HEAD, GET, OPTIONS]
+2024-03-08T18:59:08.176+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (7/14)
+2024-03-08T18:59:08.176+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Ant [pattern='/users/logout', POST]
+2024-03-08T18:59:08.176+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (8/14)
+2024-03-08T18:59:08.176+02:00 TRACE 26356 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Did not match request to Ant [pattern='/users/login', POST]
+2024-03-08T18:59:08.176+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (9/14)
+2024-03-08T18:59:08.177+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : matchingRequestParameterName is required for getMatchingRequest to lookup a value, but not provided
+2024-03-08T18:59:08.177+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (10/14)
+2024-03-08T18:59:08.180+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RememberMeAuthenticationFilter (11/14)
+2024-03-08T18:59:08.181+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]] from SPRING_SECURITY_CONTEXT
+2024-03-08T18:59:08.182+02:00 DEBUG 26356 --- [    Test worker] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]'
+2024-03-08T18:59:08.184+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (12/14)
+2024-03-08T18:59:08.185+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (13/14)
+2024-03-08T18:59:08.185+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (14/14)
+2024-03-08T18:59:08.189+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Authorizing SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@be60fad]
+2024-03-08T18:59:08.196+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Checking authorization on SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@be60fad] using AuthorityAuthorizationManager[authorities=[ROLE_Admin]]
+2024-03-08T18:59:08.197+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Did not set SecurityContextHolder since already authenticated UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]
+2024-03-08T18:59:08.209+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.ExceptionTranslationFilter     : Sending UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]] to access denied handler since access is denied
+
+org.springframework.security.access.AccessDeniedException: Access Denied
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:98) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:110) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:101) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.1.3.jar:6.1.3]
+	at com.example.roboworld.web.AdminControllerTest.deleteProfileWithUser(AdminControllerTest.java:106) ~[test/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+
+2024-03-08T18:59:08.223+02:00 DEBUG 26356 --- [    Test worker] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2024-03-08T18:59:08.223+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-03-08T18:59:08.248+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:08.266+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:08.272+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.role_type from roles r1_0 where r1_0.role_type in (?)
+2024-03-08T18:59:08.273+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [Admin]
+2024-03-08T18:59:08.274+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into roles (role_type,id) values (?,default)
+2024-03-08T18:59:08.276+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [User]
+2024-03-08T18:59:08.278+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users (email,full_name,password,username,id) values (?,?,?,?,default)
+2024-03-08T18:59:08.279+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [example@com]
+2024-03-08T18:59:08.279+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Test Testov]
+2024-03-08T18:59:08.280+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [1234]
+2024-03-08T18:59:08.280+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [admin]
+2024-03-08T18:59:08.281+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users_roles (user_id,roles_id) values (?,?)
+2024-03-08T18:59:08.283+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2]
+2024-03-08T18:59:08.284+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [2]
+2024-03-08T18:59:08.769+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select count(*) from users u1_0
+2024-03-08T18:59:08.787+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:08.806+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:08.808+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2024-03-08T18:59:08.809+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:08.810+02:00 TRACE 26356 --- [    Test worker] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:08.810+02:00 DEBUG 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-03-08T18:59:08.810+02:00 DEBUG 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]] to HttpSession [org.springframework.mock.web.MockHttpSession@5f4ba89e]
+2024-03-08T18:59:08.813+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5757ef9b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58da6f7d, org.springframework.security.web.context.SecurityContextHolderFilter@207512c3, org.springframework.security.web.header.HeaderWriterFilter@376aaeec, org.springframework.web.filter.CorsFilter@2d0f850, org.springframework.security.web.csrf.CsrfFilter@61b5c8a3, org.springframework.security.web.authentication.logout.LogoutFilter@2d0ed017, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b517988, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60f10f6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c995eae, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7d3d89fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62a30701, org.springframework.security.web.access.ExceptionTranslationFilter@2779acb2, org.springframework.security.web.access.intercept.AuthorizationFilter@bcf8bd7]] (1/1)
+2024-03-08T18:59:08.813+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /users/profiles
+2024-03-08T18:59:08.813+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/14)
+2024-03-08T18:59:08.814+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/14)
+2024-03-08T18:59:08.815+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/14)
+2024-03-08T18:59:08.816+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/14)
+2024-03-08T18:59:08.817+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CorsFilter (5/14)
+2024-03-08T18:59:08.817+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CsrfFilter (6/14)
+2024-03-08T18:59:08.818+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.csrf.CsrfFilter         : Did not protect against CSRF since request did not match CsrfNotRequired [TRACE, HEAD, GET, OPTIONS]
+2024-03-08T18:59:08.818+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (7/14)
+2024-03-08T18:59:08.819+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Ant [pattern='/users/logout', POST]
+2024-03-08T18:59:08.819+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (8/14)
+2024-03-08T18:59:08.819+02:00 TRACE 26356 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Did not match request to Ant [pattern='/users/login', POST]
+2024-03-08T18:59:08.820+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (9/14)
+2024-03-08T18:59:08.820+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : matchingRequestParameterName is required for getMatchingRequest to lookup a value, but not provided
+2024-03-08T18:59:08.820+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (10/14)
+2024-03-08T18:59:08.820+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RememberMeAuthenticationFilter (11/14)
+2024-03-08T18:59:08.820+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]] from SPRING_SECURITY_CONTEXT
+2024-03-08T18:59:08.820+02:00 DEBUG 26356 --- [    Test worker] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]'
+2024-03-08T18:59:08.821+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (12/14)
+2024-03-08T18:59:08.821+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (13/14)
+2024-03-08T18:59:08.821+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (14/14)
+2024-03-08T18:59:08.821+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Authorizing SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@554d0ec1]
+2024-03-08T18:59:08.821+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Checking authorization on SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@554d0ec1] using AuthorityAuthorizationManager[authorities=[ROLE_Admin]]
+2024-03-08T18:59:08.822+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Did not set SecurityContextHolder since already authenticated UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]
+2024-03-08T18:59:08.823+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.ExceptionTranslationFilter     : Sending UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]] to access denied handler since access is denied
+
+org.springframework.security.access.AccessDeniedException: Access Denied
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:98) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:110) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:101) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.1.3.jar:6.1.3]
+	at com.example.roboworld.web.AdminControllerTest.getProfilesWithUser(AdminControllerTest.java:81) ~[test/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+
+2024-03-08T18:59:08.874+02:00 DEBUG 26356 --- [    Test worker] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2024-03-08T18:59:08.874+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-03-08T18:59:08.887+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:08.906+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:08.909+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into roles (role_type,id) values (?,default)
+2024-03-08T18:59:08.910+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [User]
+2024-03-08T18:59:08.912+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users (email,full_name,password,username,id) values (?,?,?,?,default)
+2024-03-08T18:59:08.913+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [111@123]
+2024-03-08T18:59:08.913+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Test Testov]
+2024-03-08T18:59:08.913+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [1234]
+2024-03-08T18:59:08.913+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [test]
+2024-03-08T18:59:08.914+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users_roles (user_id,roles_id) values (?,?)
+2024-03-08T18:59:08.915+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2024-03-08T18:59:08.915+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [3]
+2024-03-08T18:59:08.917+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (description,name,user_id,id) values (?,?,?,default)
+2024-03-08T18:59:08.918+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [testtttttttttt]
+2024-03-08T18:59:08.918+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [test title]
+2024-03-08T18:59:08.918+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [3]
+2024-03-08T18:59:08.920+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2024-03-08T18:59:08.920+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:08.920+02:00 TRACE 26356 --- [    Test worker] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:08.920+02:00 DEBUG 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-03-08T18:59:08.920+02:00 DEBUG 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_Admin]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_Admin]]] to HttpSession [org.springframework.mock.web.MockHttpSession@11326597]
+2024-03-08T18:59:08.940+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5757ef9b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58da6f7d, org.springframework.security.web.context.SecurityContextHolderFilter@207512c3, org.springframework.security.web.header.HeaderWriterFilter@376aaeec, org.springframework.web.filter.CorsFilter@2d0f850, org.springframework.security.web.csrf.CsrfFilter@61b5c8a3, org.springframework.security.web.authentication.logout.LogoutFilter@2d0ed017, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b517988, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60f10f6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c995eae, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7d3d89fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62a30701, org.springframework.security.web.access.ExceptionTranslationFilter@2779acb2, org.springframework.security.web.access.intercept.AuthorizationFilter@bcf8bd7]] (1/1)
+2024-03-08T18:59:08.940+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /review/delete/1
+2024-03-08T18:59:08.940+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/14)
+2024-03-08T18:59:08.941+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/14)
+2024-03-08T18:59:08.941+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/14)
+2024-03-08T18:59:08.942+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/14)
+2024-03-08T18:59:08.942+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CorsFilter (5/14)
+2024-03-08T18:59:08.943+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CsrfFilter (6/14)
+2024-03-08T18:59:08.943+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.csrf.CsrfFilter         : Did not protect against CSRF since request did not match CsrfNotRequired [TRACE, HEAD, GET, OPTIONS]
+2024-03-08T18:59:08.943+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (7/14)
+2024-03-08T18:59:08.943+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Ant [pattern='/users/logout', POST]
+2024-03-08T18:59:08.943+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (8/14)
+2024-03-08T18:59:08.944+02:00 TRACE 26356 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Did not match request to Ant [pattern='/users/login', POST]
+2024-03-08T18:59:08.945+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (9/14)
+2024-03-08T18:59:08.945+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : matchingRequestParameterName is required for getMatchingRequest to lookup a value, but not provided
+2024-03-08T18:59:08.945+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (10/14)
+2024-03-08T18:59:08.945+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RememberMeAuthenticationFilter (11/14)
+2024-03-08T18:59:08.946+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_Admin]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_Admin]]] from SPRING_SECURITY_CONTEXT
+2024-03-08T18:59:08.946+02:00 DEBUG 26356 --- [    Test worker] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_Admin]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_Admin]]'
+2024-03-08T18:59:08.946+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (12/14)
+2024-03-08T18:59:08.946+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (13/14)
+2024-03-08T18:59:08.946+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (14/14)
+2024-03-08T18:59:08.947+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Authorizing SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3de6799f]
+2024-03-08T18:59:08.947+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Checking authorization on SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3de6799f] using org.springframework.security.authorization.AuthenticatedAuthorizationManager@37a8202
+2024-03-08T18:59:08.948+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Did not set SecurityContextHolder since already authenticated UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_Admin]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_Admin]]
+2024-03-08T18:59:08.951+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /review/delete/1
+2024-03-08T18:59:09.000+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,u1_0.id,u1_0.email,u1_0.full_name,u1_0.password,u1_0.username,c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from reviews r1_0 left join users u1_0 on u1_0.id=r1_0.user_id left join courses c1_0 on u1_0.id=c1_0.lecturer_id where r1_0.id=?
+2024-03-08T18:59:09.000+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2024-03-08T18:59:09.008+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-08T18:59:09.009+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2024-03-08T18:59:09.018+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=?
+2024-03-08T18:59:09.018+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2024-03-08T18:59:09.032+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-03-08T18:59:09.038+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select count(*) from reviews r1_0
+2024-03-08T18:59:09.044+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:09.076+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:09.083+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.role_type from roles r1_0 where r1_0.role_type in (?)
+2024-03-08T18:59:09.087+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [User]
+2024-03-08T18:59:09.091+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into roles (role_type,id) values (?,default)
+2024-03-08T18:59:09.094+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [User]
+2024-03-08T18:59:09.098+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users (email,full_name,password,username,id) values (?,?,?,?,default)
+2024-03-08T18:59:09.100+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [example@com]
+2024-03-08T18:59:09.100+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Test Testov]
+2024-03-08T18:59:09.100+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [1234]
+2024-03-08T18:59:09.100+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [user]
+2024-03-08T18:59:09.101+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users_roles (user_id,roles_id) values (?,?)
+2024-03-08T18:59:09.101+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4]
+2024-03-08T18:59:09.102+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [4]
+2024-03-08T18:59:09.104+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5757ef9b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58da6f7d, org.springframework.security.web.context.SecurityContextHolderFilter@207512c3, org.springframework.security.web.header.HeaderWriterFilter@376aaeec, org.springframework.web.filter.CorsFilter@2d0f850, org.springframework.security.web.csrf.CsrfFilter@61b5c8a3, org.springframework.security.web.authentication.logout.LogoutFilter@2d0ed017, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b517988, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60f10f6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c995eae, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7d3d89fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62a30701, org.springframework.security.web.access.ExceptionTranslationFilter@2779acb2, org.springframework.security.web.access.intercept.AuthorizationFilter@bcf8bd7]] (1/1)
+2024-03-08T18:59:09.104+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /users/delete/4
+2024-03-08T18:59:09.104+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/14)
+2024-03-08T18:59:09.105+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/14)
+2024-03-08T18:59:09.106+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/14)
+2024-03-08T18:59:09.106+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/14)
+2024-03-08T18:59:09.106+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CorsFilter (5/14)
+2024-03-08T18:59:09.106+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CsrfFilter (6/14)
+2024-03-08T18:59:09.106+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.csrf.CsrfFilter         : Did not protect against CSRF since request did not match CsrfNotRequired [TRACE, HEAD, GET, OPTIONS]
+2024-03-08T18:59:09.107+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (7/14)
+2024-03-08T18:59:09.107+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Ant [pattern='/users/logout', POST]
+2024-03-08T18:59:09.107+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (8/14)
+2024-03-08T18:59:09.107+02:00 TRACE 26356 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Did not match request to Ant [pattern='/users/login', POST]
+2024-03-08T18:59:09.107+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (9/14)
+2024-03-08T18:59:09.107+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : matchingRequestParameterName is required for getMatchingRequest to lookup a value, but not provided
+2024-03-08T18:59:09.107+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (10/14)
+2024-03-08T18:59:09.107+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RememberMeAuthenticationFilter (11/14)
+2024-03-08T18:59:09.107+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2024-03-08T18:59:09.108+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:09.108+02:00 TRACE 26356 --- [    Test worker] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:09.108+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (12/14)
+2024-03-08T18:59:09.108+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (13/14)
+2024-03-08T18:59:09.108+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (14/14)
+2024-03-08T18:59:09.108+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Authorizing SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@764a5191]
+2024-03-08T18:59:09.108+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Checking authorization on SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@764a5191] using AuthorityAuthorizationManager[authorities=[ROLE_Admin]]
+2024-03-08T18:59:09.111+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-03-08T18:59:09.111+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.ExceptionTranslationFilter     : Sending AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]] to authentication entry point since access is denied
+
+org.springframework.security.access.AccessDeniedException: Access Denied
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:98) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:145) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:101) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.1.3.jar:6.1.3]
+	at com.example.roboworld.web.AdminControllerTest.deleteProfileWithAnonymous(AdminControllerTest.java:96) ~[test/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+
+2024-03-08T18:59:09.119+02:00 DEBUG 26356 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost/users/delete/4?continue to session
+2024-03-08T18:59:09.120+02:00 DEBUG 26356 --- [    Test worker] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost/users/login
+2024-03-08T18:59:09.121+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-03-08T18:59:09.132+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:09.152+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:09.155+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2024-03-08T18:59:09.155+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:09.155+02:00 TRACE 26356 --- [    Test worker] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:09.155+02:00 DEBUG 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-03-08T18:59:09.155+02:00 DEBUG 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_Admin]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_Admin]]] to HttpSession [org.springframework.mock.web.MockHttpSession@196f7dfd]
+2024-03-08T18:59:09.156+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5757ef9b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58da6f7d, org.springframework.security.web.context.SecurityContextHolderFilter@207512c3, org.springframework.security.web.header.HeaderWriterFilter@376aaeec, org.springframework.web.filter.CorsFilter@2d0f850, org.springframework.security.web.csrf.CsrfFilter@61b5c8a3, org.springframework.security.web.authentication.logout.LogoutFilter@2d0ed017, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b517988, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60f10f6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c995eae, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7d3d89fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62a30701, org.springframework.security.web.access.ExceptionTranslationFilter@2779acb2, org.springframework.security.web.access.intercept.AuthorizationFilter@bcf8bd7]] (1/1)
+2024-03-08T18:59:09.157+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /users/profiles
+2024-03-08T18:59:09.157+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/14)
+2024-03-08T18:59:09.158+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/14)
+2024-03-08T18:59:09.158+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/14)
+2024-03-08T18:59:09.158+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/14)
+2024-03-08T18:59:09.159+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CorsFilter (5/14)
+2024-03-08T18:59:09.159+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CsrfFilter (6/14)
+2024-03-08T18:59:09.159+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.csrf.CsrfFilter         : Did not protect against CSRF since request did not match CsrfNotRequired [TRACE, HEAD, GET, OPTIONS]
+2024-03-08T18:59:09.159+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (7/14)
+2024-03-08T18:59:09.159+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Ant [pattern='/users/logout', POST]
+2024-03-08T18:59:09.159+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (8/14)
+2024-03-08T18:59:09.159+02:00 TRACE 26356 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Did not match request to Ant [pattern='/users/login', POST]
+2024-03-08T18:59:09.160+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (9/14)
+2024-03-08T18:59:09.160+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : matchingRequestParameterName is required for getMatchingRequest to lookup a value, but not provided
+2024-03-08T18:59:09.160+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (10/14)
+2024-03-08T18:59:09.160+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RememberMeAuthenticationFilter (11/14)
+2024-03-08T18:59:09.160+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_Admin]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_Admin]]] from SPRING_SECURITY_CONTEXT
+2024-03-08T18:59:09.160+02:00 DEBUG 26356 --- [    Test worker] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_Admin]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_Admin]]'
+2024-03-08T18:59:09.160+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (12/14)
+2024-03-08T18:59:09.160+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (13/14)
+2024-03-08T18:59:09.161+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (14/14)
+2024-03-08T18:59:09.161+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Authorizing SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@5aede1ef]
+2024-03-08T18:59:09.161+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Checking authorization on SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@5aede1ef] using AuthorityAuthorizationManager[authorities=[ROLE_Admin]]
+2024-03-08T18:59:09.161+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Did not set SecurityContextHolder since already authenticated UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_Admin]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_Admin]]
+2024-03-08T18:59:09.161+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /users/profiles
+2024-03-08T18:59:09.167+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name,u1_0.password,u1_0.username from users u1_0
+2024-03-08T18:59:09.168+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-08T18:59:09.169+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4]
+2024-03-08T18:59:09.169+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-08T18:59:09.169+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4]
+2024-03-08T18:59:09.170+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-08T18:59:09.170+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2024-03-08T18:59:09.172+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-08T18:59:09.172+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
+2024-03-08T18:59:09.173+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-08T18:59:09.173+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2]
+2024-03-08T18:59:09.173+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-08T18:59:09.174+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2]
+2024-03-08T18:59:09.174+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-08T18:59:09.175+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2024-03-08T18:59:09.175+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-08T18:59:09.176+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
+2024-03-08T18:59:10.097+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-03-08T18:59:10.117+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:10.124+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-08T18:59:10.128+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5757ef9b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58da6f7d, org.springframework.security.web.context.SecurityContextHolderFilter@207512c3, org.springframework.security.web.header.HeaderWriterFilter@376aaeec, org.springframework.web.filter.CorsFilter@2d0f850, org.springframework.security.web.csrf.CsrfFilter@61b5c8a3, org.springframework.security.web.authentication.logout.LogoutFilter@2d0ed017, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b517988, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60f10f6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c995eae, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7d3d89fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62a30701, org.springframework.security.web.access.ExceptionTranslationFilter@2779acb2, org.springframework.security.web.access.intercept.AuthorizationFilter@bcf8bd7]] (1/1)
+2024-03-08T18:59:10.128+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /users/profiles
+2024-03-08T18:59:10.128+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/14)
+2024-03-08T18:59:10.128+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/14)
+2024-03-08T18:59:10.129+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/14)
+2024-03-08T18:59:10.129+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/14)
+2024-03-08T18:59:10.129+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CorsFilter (5/14)
+2024-03-08T18:59:10.129+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CsrfFilter (6/14)
+2024-03-08T18:59:10.129+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.csrf.CsrfFilter         : Did not protect against CSRF since request did not match CsrfNotRequired [TRACE, HEAD, GET, OPTIONS]
+2024-03-08T18:59:10.129+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (7/14)
+2024-03-08T18:59:10.129+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Ant [pattern='/users/logout', POST]
+2024-03-08T18:59:10.129+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (8/14)
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Did not match request to Ant [pattern='/users/login', POST]
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (9/14)
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : matchingRequestParameterName is required for getMatchingRequest to lookup a value, but not provided
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (10/14)
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RememberMeAuthenticationFilter (11/14)
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (12/14)
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (13/14)
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (14/14)
+2024-03-08T18:59:10.130+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Authorizing SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@17994ef8]
+2024-03-08T18:59:10.131+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Checking authorization on SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@17994ef8] using AuthorityAuthorizationManager[authorities=[ROLE_Admin]]
+2024-03-08T18:59:10.131+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-03-08T18:59:10.131+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.ExceptionTranslationFilter     : Sending AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]] to authentication entry point since access is denied
+
+org.springframework.security.access.AccessDeniedException: Access Denied
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:98) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:145) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:101) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225) ~[spring-security-config-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.3.jar:6.1.3]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.1.3.jar:6.1.3]
+	at com.example.roboworld.web.AdminControllerTest.getProfilesWithAnonymous(AdminControllerTest.java:74) ~[test/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+
+2024-03-08T18:59:10.137+02:00 DEBUG 26356 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost/users/profiles?continue to session
+2024-03-08T18:59:10.138+02:00 DEBUG 26356 --- [    Test worker] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost/users/login
+2024-03-08T18:59:10.138+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-03-08T18:59:10.141+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+]]></system-out>
+  <system-err><![CDATA[[2024.03.08 18:58:54] (Coverage): Error during class instrumentation: org.springframework.boot.logging.log4j2.Log4J2LoggingSystem: java.lang.RuntimeException: java.io.IOException: Class org/apache/logging/log4j/core/config/composite/CompositeConfiguration not found
+[2024.03.08 18:58:56] (Coverage): Error during class instrumentation: io.micrometer.core.instrument.binder.kafka.KafkaMetrics: java.lang.RuntimeException: java.io.IOException: Class org/apache/kafka/common/MetricName not found
+[2024.03.08 18:59:04] (Coverage): Error during class instrumentation: org.springframework.security.config.annotation.authentication.configurers.ldap.LdapAuthenticationProviderConfigurer: java.lang.RuntimeException: java.io.IOException: Class org/springframework/security/ldap/authentication/PasswordComparisonAuthenticator not found
+]]></system-err>
+</testsuite>

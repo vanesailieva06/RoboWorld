@@ -1,0 +1,363 @@
+@media (max-width: 1400px) and (min-width: 1250px) {
+    .header-info div{
+        width: 25%;
+
+    }
+    .header-info{
+        padding-right: 0;
+    }
+    .header-section{
+        height: 650px;
+    }
+    .header-image img{
+        height: 650px;
+    }
+    .advantage-article1 div{
+        width: 43%;
+    }
+    .reviews-div{
+        width: 100%;
+    }
+    .add-review{
+        width: 70%;
+    }
+}
+@media (max-width: 1250px) and (min-width:1100px){
+    main{
+        width: 90%;
+    }
+    .header-image{
+        display: none;
+    }
+    .header-info{
+        width: 80%;
+    }
+    .header-info div{
+        width: 23%;
+    }
+    .advantage-article1 div{
+        width: 46%;
+    }
+    .advantages{
+        gap: 20px;
+    }
+    .reviews-div{
+        width: 100%;
+    }
+    .discussion-info{
+        height:500px;
+    }
+    .discussion-info{
+        width: 85%;
+        gap: 30px;
+    }
+}
+@media (max-width: 1100px) and (min-width: 900px){
+    .normal-nav{
+        display: none;
+    }
+    .discussion-info{
+        height:500px;
+    }
+    .discussion-info{
+        width: 95%;
+        gap: 30px;
+    }
+    #message{
+        width: 85%;
+    }
+    #commentCtnr div{
+        width: 85%;
+    }
+
+    .forum-details{
+        width: 90%;
+    }
+    .other-forums{
+        gap: 40px;
+    }
+    main{
+        width: 95%;
+    }
+    .header-image{
+        display: none;
+    }
+    .header-info{
+        width: 80%;
+    }
+    .header-info div{
+        width: 27%;
+    }
+    .advantage-article1 div{
+        width: 52%;
+    }
+    .advantages{
+        gap: 20px;
+    }
+    .reviews-div{
+        width: 100%;
+    }
+    .reviews-div{
+        gap: 20px;
+    }
+    .add-review{
+        width: 75%;
+    }
+    .responsive-nav{
+        display: block;
+    }
+    .login-form, .register-form{
+        width: 40%;
+    }
+}
+@media (max-width: 900px) and (min-width: 600px){
+    .normal-nav{
+        display: none;
+    }
+    #message{
+        width: 90%;
+    }
+    #commentCtnr div{
+        width: 90%;
+    }
+
+    .forum-details{
+        width: 90%;
+    }
+    .other-forums{
+        gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        margin:auto;
+    }
+    .discussion-info{
+        height:500px;
+    }
+    .discussion-info{
+        width: 95%;
+        gap: 30px;
+    }
+    .discussion{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main{
+        width: 95%;
+    }
+    .responsive-nav{
+        display: block;
+    }
+    .header-image{
+        display: none;
+    }
+    .header-info{
+        width: 90%;
+    }
+    .header-info div{
+        width: 30%;
+    }
+    .advantages{
+        grid-template-areas:
+        "advantage1 advantage2"
+        "advantage3 advantage4"
+        "advantage5 advantage6";
+    }
+    .advantage-article1 div{
+        width: 45%;
+    }
+    .advantages{
+        gap: 20px;
+    }
+    .reviews-div{
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        gap: 30px;
+    }
+    .add-review{
+        width: 85%;
+    }
+    .ul-footer{
+        flex-direction: column;
+    }
+    .ul-footer li{
+        padding-bottom: 12px;
+    }
+}
+@media (max-width: 600px) and (min-width: 450px){
+    .header-section{
+        width: 95%;
+    }
+    #message{
+        width: 90%;
+    }
+    #commentCtnr div{
+        width: 90%;
+    }
+    .comments{
+        flex-direction: column;
+    }
+
+    .forum-details{
+        width: 95%;
+        margin: auto;
+    }
+    .other-forums{
+        gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        margin:auto;
+    }
+    .normal-nav{
+        display: none;
+    }
+    main{
+        width: 95%;
+    }
+    .responsive-nav{
+        display: block;
+    }
+    .header-image{
+        display: none;
+    }
+    .header-info{
+        width: 100%;
+    }
+    .discussion-info{
+        height:500px;
+    }
+    .discussion-info{
+        width: 100%;
+        gap: 30px;
+    }
+    .discussion{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .login-form, .register-form{
+        width: 70%;
+    }
+
+    .advantages{
+        grid-template-areas:
+        "advantage1"
+        "advantage2"
+        "advantage3"
+        "advantage4"
+        "advantage5"
+        "advantage6";
+        width: 90%;
+    }
+    .advantage-article1 h1, .advantage-article1 span{
+        font-size: 38px;
+    }
+    .advantage-article1 div{
+        width: 40%;
+    }
+    .reviews-div{
+        width: 90%;
+    }
+    .add-review{
+        width: 95%;
+    }
+    .add-review button{
+        width: 32%;
+    }
+    .ul-footer{
+        flex-direction: column;
+    }
+    .ul-footer li{
+        padding-bottom: 12px;
+    }
+    .reviews-div{
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        gap: 30px;
+    }
+    .header-info div{
+        width: 50%;
+    }
+}
+@media (max-width: 450px) {
+    .header-info div{
+        width: 63%;
+    }
+    .login-form, .register-form{
+        width: 80%;
+    }
+    .advantage-article1 div{
+        width: 52%;
+    }
+    .reviews-div{
+        width: 90%;
+    }
+    .add-review button{
+        width: 48%;
+    }
+    .header-section{
+        width: 95%;
+    }
+    .normal-nav{
+        display: none;
+    }
+    main{
+        width: 95%;
+    }
+    .responsive-nav{
+        display: block;
+    }
+    .header-image{
+        display: none;
+    }
+    .header-info{
+        width: 100%;
+    }
+    .advantages{
+        grid-template-areas:
+        "advantage1"
+        "advantage2"
+        "advantage3"
+        "advantage4"
+        "advantage5"
+        "advantage6";
+        width: 90%;
+        margin:auto;
+    }
+    .advantage-article1 h1, .advantage-article1 span{
+        font-size: 38px;
+    }
+    .reviews-div{
+        width: 90%;
+    }
+    .add-review{
+        width: 95%;
+    }
+    .ul-footer{
+        flex-direction: column;
+    }
+    .ul-footer li{
+        padding-bottom: 12px;
+    }
+    .reviews-div{
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        gap: 30px;
+    }
+    #message{
+        width: 90%;
+    }
+    #commentCtnr div{
+        width: 90%;
+    }
+    .comments{
+        flex-direction: column;
+    }
+
+    .forum-details{
+        width: 95%;
+        margin: auto;
+    }
+    .other-forums{
+        gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        margin:auto;
+    }
+    .comment-section{
+        margin-bottom: 70px;
+    }
+}

@@ -18,9 +18,10 @@
   />
   <link rel="stylesheet" href="/css/reset.css" />
   <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
 </head>
 <body>
-<nav class="navbar navbar-expand-lg" th:fragment="nav">
+<nav class="navbar normal-nav navbar-expand-lg" th:fragment="nav">
   <div class="container-fluid">
     <a th:text="#{app.title}" class="navbar-brand logo" href="/"
     >РобоСвят </a><i class="fa-solid fa-robot"></i
@@ -93,6 +94,70 @@
   </div>
 </nav>
 
+
+
+<nav class="navbar bg-body-tertiary responsive-nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/" th:text="#{app.title}">RoboWorld</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" th:text="#{app.title}">RoboWorld</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" sec:authorize="!isAuthenticated()" th:href="@{/}" th:text="#{nav.home}">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a th:text="#{nav.courses}" sec:authorize="isAuthenticated()" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" th:text="#{nav.sixToEight}" th:href="@{/courses/sixToEight}">6-8 years old</a></li>
+              <li><a class="dropdown-item" th:text="#{nav.nineToTwelve}" th:href="@{/courses/nineToTwelve}">9-12 years old</a></li>
+              <li><a class="dropdown-item" th:text="#{nav.thirteenToFifteen}" th:href="@{/courses/thirteenToFifteen}">13-15 years old</a></li>
+              <li><a class="dropdown-item" th:text="#{nav.sixteenToEighteen}" th:href="@{/courses/sixteenToEighteen}">16-18 years old</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" sec:authorize="isAuthenticated()" th:text="#{nav.forum}" th:href="@{/forum/all}">Forum</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link"  sec:authorize="hasRole('Admin')" th:text="#{nav.profiles}" th:href="@{/users/profiles}">Profiles</a>
+          </li>
+
+            <li class="nav-item dropdown">
+              <a th:text="#{nav.robotics}" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                What is Robotics?
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" th:text="#{nav.etymology}" th:href="@{/robotics/etymology}">Etymology</a></li>
+                <li><a class="dropdown-item" th:text="#{nav.history}" th:href="@{/robotics/history}">History</a></li>
+                <li><a class="dropdown-item" th:text="#{nav.directions}" th:href="@{/robotics/directions}">Directions</a></li>
+                <li><a class="dropdown-item" th:text="#{nav.components}" th:href="@{/robotics/components}">Components</a></li>
+                <li><a class="dropdown-item" th:text="#{nav.usage}" th:href="@{/robotics/usage}">Usage</a></li>
+
+              </ul>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" th:text="#{nav.aboutUs}" th:href="@{/about-us}">About us</a>
+          </li>
+          <li class="nav-item">
+            <form sec:authorize="isAuthenticated()" th:method="post"
+                  th:action="@{/users/logout}">
+              <input type="submit" th:value="#{nav.logout}" class="btn logout nav-link" value="Изход"/>
+            </form>
+          </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</nav>
 <footer th:fragment="footer">
       <span  th:text="#{app.title}" class="logo article-logo"
       >РобоСвят</span><i class="fa-solid fa-robot"></i

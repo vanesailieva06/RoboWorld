@@ -9,7 +9,7 @@
       <h1 th:text="#{register.h1}">
         Регистрация
       </h1>
-      <form class="w-25 m-auto" th:method="post" th:action="@{/users/register}" th:object="${userRegisterDto}">
+      <form class="register-form m-auto" th:method="post" th:action="@{/users/register}" th:object="${userRegisterDto}">
         <div class="mb-3">
           <label th:text="#{register.username}" for="username" class="form-label">Потребителско име</label>
           <input type="text" class="form-control" th:field="*{username}" id="username" aria-describedby="emailHelp">
