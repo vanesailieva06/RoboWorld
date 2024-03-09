@@ -711,3 +711,11 @@ footer {
 .login-form, .register-form{
   width: 25%;
 }
+.search-bar{
+  width: 70%;
+  margin: 30px auto;
+}
+#search-bar{
+  height: 45px;
+  font-size: 22px;
+}
