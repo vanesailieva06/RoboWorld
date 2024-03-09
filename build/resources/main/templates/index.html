@@ -76,17 +76,17 @@
         </div>
       </section>
       <section class="add-review" sec:authorize="isAuthenticated()" >
-        <h2 class="text-light">Напиши отзив</h2>
+        <h2 class="text-light" th:text="#{index.postReview}">Напиши отзив</h2>
         <form th:action="@{/review/add}" th:object="${reviewAddDto}" th:method="post">
         <div class="mb-3">
-          <label for="name" class="form-label text-light">Name</label>
+          <label for="name" class="form-label text-light" th:text="#{index.nameReview}">Name</label>
           <input th:field="*{name}" name="name" type="text" class="form-control" id="name" placeholder="Example:Ivan Ivanov">
         </div>
         <div class="mb-3">
-          <label for="description" class="form-label text-light">Review</label>
+          <label for="description" class="form-label text-light" th:text="#{index.comment}">Review</label>
           <textarea th:field="*{description}" name="description" class="form-control" id="description" rows="3"></textarea>
         </div>
-        <button th:href="@{/review/add}">Предай</button>
+        <button th:text="#{index.post}" th:href="@{/review/add}">Предай</button>
         </form>
       </section>
 

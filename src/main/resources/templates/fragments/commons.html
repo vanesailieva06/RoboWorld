@@ -153,6 +153,12 @@
               <input type="submit" th:value="#{nav.logout}" class="btn logout nav-link" value="Изход"/>
             </form>
           </li>
+          <li class="nav-item">
+            <button th:text="|#{switch-en} /|" class="switch-lang" onclick="window.location.href='http://localhost:8080/?localeData=en'">
+            </button>
+            <button th:text="#{switch-bg}" class="switch-lang" onclick="window.location.href='http://localhost:8080/?localeData=bg'">
+            </button>
+          </li>
           </ul>
       </div>
     </div>
