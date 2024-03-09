@@ -1,6 +1,7 @@
 package com.example.roboworld.web;
 
 import com.example.roboworld.model.dto.UserRegisterDto;
+import com.example.roboworld.service.CourseService;
 import com.example.roboworld.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
@@ -16,9 +17,11 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @RequestMapping("/users")
 public class UserController {
     private final UserService userService;
+    private final CourseService courseService;
 
-    public UserController(UserService userService) {
+    public UserController(UserService userService, CourseService courseService) {
         this.userService = userService;
+        this.courseService = courseService;
     }
 
     @GetMapping("/login")
@@ -65,5 +68,11 @@ public class UserController {
         model.addAttribute("bad_credentials", true);
 
         return "login";
+    }
+
+    @GetMapping("/yourCourses")
+    public String yourCourses(Model model){
+        model.addAttribute("yourCourses", courseService.getAllSignInCourses());
+        return "your-courses";
     }
 }

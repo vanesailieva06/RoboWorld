@@ -2,6 +2,11 @@ package com.example.roboworld.web;
 
 import com.example.roboworld.model.entity.enums.AgeLimit;
 import com.example.roboworld.service.CourseService;
+import com.example.roboworld.service.LectureService;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,9 +17,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/courses")
 public class CoursesController {
     private final CourseService courseService;
+    private final LectureService lectureService;
 
-    public CoursesController(CourseService courseService) {
+    public CoursesController(CourseService courseService, LectureService lectureService) {
         this.courseService = courseService;
+        this.lectureService = lectureService;
     }
 
     @GetMapping("/sixToEight")
@@ -38,8 +45,16 @@ public class CoursesController {
         return "courses16-18";
     }
     @GetMapping("/{id}")
-    public String courseDetails(@PathVariable Long id){
+    public String courseDetails(@PathVariable Long id, Model model,  @PageableDefault(size = 4) Pageable pageable){
+        model.addAttribute("lectures", lectureService.getAllByCourseId(id));
+        model.addAttribute("courseDetails",courseService.findById(id));
+        model.addAttribute("otherCourses", courseService.getAllWithoutThis(id, pageable));
         return "courses-details";
     }
 
+    @GetMapping("/signInUp/{id}")
+    public String signInUp(@PathVariable Long id,@AuthenticationPrincipal UserDetails userDetails){
+        courseService.signInUp(id, userDetails);
+        return "redirect:/courses/"+ id;
+    }
 }
