@@ -54,7 +54,7 @@ public class User extends BaseEntity{
         this.password = password;
     }
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     public List<Role> getRoles() {
         return roles;
     }

@@ -44,11 +44,13 @@ class AdminControllerTest {
     @BeforeEach
     public void setUp(){
         testDataUtil.cleanUpReview();
+        testDataUserUtil.cleanUp();
     }
 
     @AfterEach
     public void tearDown(){
         testDataUtil.cleanUpReview();
+        testDataUserUtil.cleanUp();
     }
 
     private static final String TEST_TITLE = "test title";

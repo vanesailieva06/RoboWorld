@@ -28,7 +28,7 @@ public class UserControllerTest {
 
     @BeforeEach
     public void setUp(){
-//        testDataUserUtil.cleanUp();
+       testDataUserUtil.cleanUp();
     }
     @AfterEach
     public void teaDown(){
