@@ -16,8 +16,7 @@
                 Nesciunt sed maiores iure, odit nam repellat beatae dolorum,
                 consequatur sequi quibusdam sunt molestiae ab recusandae
                 voluptatibus similique?</p>
-            <a class="see-more" th:href="@{/title/id}">See more</a>
-        </article>
+            <a class="see-more" th:href="@{/{title}/{id}(title = *{title}) (id= *{id})}">See more</a>        </article>
 
     </div>
 </section>

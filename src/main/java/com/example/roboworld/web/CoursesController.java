@@ -5,6 +5,7 @@ import com.example.roboworld.service.CourseService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -35,6 +36,10 @@ public class CoursesController {
     public String sixteenToEighteen(Model model){
         model.addAttribute("course16to18",courseService.getAllByAgeLimit(AgeLimit.SixteenToEighteen));
         return "courses16-18";
+    }
+    @GetMapping("/{id}")
+    public String courseDetails(@PathVariable Long id){
+        return "courses-details";
     }
 
 }
