@@ -1,318 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.roboworld.web.HomeControllerTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-03-08T16:59:10" hostname="VANESAILIEVA" time="0.083">
+<testsuite name="com.example.roboworld.web.HomeControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-09T10:41:51" hostname="VANESAILIEVA" time="0.042">
   <properties/>
-  <testcase name="addReviewWithUser()" classname="com.example.roboworld.web.HomeControllerTest" time="0.083">
-    <failure message="jakarta.servlet.ServletException: Request processing failed: org.springframework.dao.IncorrectResultSizeDataAccessException: Query did not return a unique result: 2 results were returned" type="jakarta.servlet.ServletException">jakarta.servlet.ServletException: Request processing failed: org.springframework.dao.IncorrectResultSizeDataAccessException: Query did not return a unique result: 2 results were returned
-	at app//org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
-	at app//org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at app//org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at app//org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
-	at app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at app//org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
-	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at app//org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
-	at app//org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
-	at app//org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
-	at app//org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:110)
-	at app//org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:101)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
-	at app//org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
-	at app//org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:131)
-	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
-	at app//org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
-	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
-	at app//org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
-	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
-	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
-	at app//org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at app//org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
-	at app//org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
-	at app//org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at app//org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
-	at app//org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at app//org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
-	at app//org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225)
-	at app//org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
-	at app//org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
-	at app//org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at app//org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at app//org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at app//org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at app//org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at app//org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
-	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at app//org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at app//org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
-	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at app//org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at app//org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at app//org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at app//org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
-	at app//com.example.roboworld.web.HomeControllerTest.addReviewWithUser(HomeControllerTest.java:60)
-	at java.base@20.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base@20.0.2.1/java.lang.reflect.Method.invoke(Method.java:578)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@20.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@20.0.2.1/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
-	at java.base@20.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base@20.0.2.1/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: org.springframework.dao.IncorrectResultSizeDataAccessException: Query did not return a unique result: 2 results were returned
-	at app//org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:301)
-	at app//org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:244)
-	at app//org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
-	at app//org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
-	at app//org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
-	at app//org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
-	at app/jdk.proxy3/jdk.proxy3.$Proxy156.findByUsername(Unknown Source)
-	at app//com.example.roboworld.service.impl.ReviewServiceImpl.addReview(ReviewServiceImpl.java:34)
-	at app//com.example.roboworld.web.HomeController.addReview(HomeController.java:43)
-	at java.base@20.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base@20.0.2.1/java.lang.reflect.Method.invoke(Method.java:578)
-	at app//org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:261)
-	at app//org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:189)
-	at app//org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
-	at app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
-	at app//org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at app//org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at app//org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at app//org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	... 194 more
-Caused by: org.hibernate.NonUniqueResultException: Query did not return a unique result: 2 results were returned
-	at app//org.hibernate.query.spi.AbstractSelectionQuery.uniqueElement(AbstractSelectionQuery.java:586)
-	at app//org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:570)
-	at app//org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:223)
-	at app//org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92)
-	at app//org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:149)
-	at app//org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:137)
-	at app//org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
-	at app//org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
-	at app//org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
-	at app//org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at app//org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
-	at app//org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at app//org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	... 214 more
-</failure>
-  </testcase>
-  <system-out><![CDATA[2024-03-08T18:59:10.147+02:00  INFO 26356 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.roboworld.web.HomeControllerTest]: HomeControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-03-08T18:59:10.152+02:00  INFO 26356 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.roboworld.RobotWorldApplication for test class com.example.roboworld.web.HomeControllerTest
-2024-03-08T18:59:10.161+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
-2024-03-08T18:59:10.164+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into roles (role_type,id) values (?,default)
-2024-03-08T18:59:10.164+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [User]
-2024-03-08T18:59:10.166+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users (email,full_name,password,username,id) values (?,?,?,?,default)
-2024-03-08T18:59:10.166+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [111@123]
-2024-03-08T18:59:10.166+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Test Testov]
-2024-03-08T18:59:10.166+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [1234]
-2024-03-08T18:59:10.166+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [test]
-2024-03-08T18:59:10.168+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into users_roles (user_id,roles_id) values (?,?)
-2024-03-08T18:59:10.168+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5]
-2024-03-08T18:59:10.169+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [5]
-2024-03-08T18:59:10.170+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (description,name,user_id,id) values (?,?,?,default)
-2024-03-08T18:59:10.170+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [testtttttttttt]
-2024-03-08T18:59:10.170+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Test T.]
-2024-03-08T18:59:10.170+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [5]
-2024-03-08T18:59:10.173+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
-2024-03-08T18:59:10.173+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created SecurityContextImpl [Null authentication]
-2024-03-08T18:59:10.173+02:00 TRACE 26356 --- [    Test worker] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
-2024-03-08T18:59:10.173+02:00 DEBUG 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
-2024-03-08T18:59:10.173+02:00 DEBUG 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]] to HttpSession [org.springframework.mock.web.MockHttpSession@552da55b]
-2024-03-08T18:59:10.175+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5757ef9b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58da6f7d, org.springframework.security.web.context.SecurityContextHolderFilter@207512c3, org.springframework.security.web.header.HeaderWriterFilter@376aaeec, org.springframework.web.filter.CorsFilter@2d0f850, org.springframework.security.web.csrf.CsrfFilter@61b5c8a3, org.springframework.security.web.authentication.logout.LogoutFilter@2d0ed017, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b517988, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60f10f6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c995eae, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7d3d89fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62a30701, org.springframework.security.web.access.ExceptionTranslationFilter@2779acb2, org.springframework.security.web.access.intercept.AuthorizationFilter@bcf8bd7]] (1/1)
-2024-03-08T18:59:10.175+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /review/add
-2024-03-08T18:59:10.175+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/14)
-2024-03-08T18:59:10.175+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/14)
-2024-03-08T18:59:10.175+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/14)
-2024-03-08T18:59:10.175+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/14)
-2024-03-08T18:59:10.175+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CorsFilter (5/14)
-2024-03-08T18:59:10.176+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CsrfFilter (6/14)
-2024-03-08T18:59:10.177+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (7/14)
-2024-03-08T18:59:10.177+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Ant [pattern='/users/logout', POST]
-2024-03-08T18:59:10.177+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (8/14)
-2024-03-08T18:59:10.177+02:00 TRACE 26356 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Did not match request to Ant [pattern='/users/login', POST]
-2024-03-08T18:59:10.177+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (9/14)
-2024-03-08T18:59:10.177+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : matchingRequestParameterName is required for getMatchingRequest to lookup a value, but not provided
-2024-03-08T18:59:10.177+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (10/14)
-2024-03-08T18:59:10.177+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RememberMeAuthenticationFilter (11/14)
-2024-03-08T18:59:10.177+02:00 TRACE 26356 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]] from SPRING_SECURITY_CONTEXT
-2024-03-08T18:59:10.177+02:00 DEBUG 26356 --- [    Test worker] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]'
-2024-03-08T18:59:10.178+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (12/14)
-2024-03-08T18:59:10.178+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (13/14)
-2024-03-08T18:59:10.178+02:00 TRACE 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (14/14)
-2024-03-08T18:59:10.178+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Authorizing SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@48e2b4b7]
-2024-03-08T18:59:10.178+02:00 TRACE 26356 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Checking authorization on SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@48e2b4b7] using org.springframework.security.authorization.AuthenticatedAuthorizationManager@37a8202
-2024-03-08T18:59:10.178+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Did not set SecurityContextHolder since already authenticated UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]
-2024-03-08T18:59:10.179+02:00 DEBUG 26356 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /review/add
-2024-03-08T18:59:10.200+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
-2024-03-08T18:59:10.200+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [user]
-2024-03-08T18:59:10.202+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
-2024-03-08T18:59:10.203+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4]
-2024-03-08T18:59:10.204+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
-2024-03-08T18:59:10.204+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4]
-2024-03-08T18:59:10.206+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
-2024-03-08T18:59:10.207+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
-2024-03-08T18:59:10.207+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
-2024-03-08T18:59:10.208+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1]
-2024-03-08T18:59:10.218+02:00 TRACE 26356 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
-2024-03-08T18:59:10.226+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
-2024-03-08T18:59:10.230+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name,u1_0.password,u1_0.username,c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from users u1_0 left join courses c1_0 on u1_0.id=c1_0.lecturer_id where u1_0.id=?
-2024-03-08T18:59:10.231+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5]
-2024-03-08T18:59:10.232+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
-2024-03-08T18:59:10.232+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5]
-2024-03-08T18:59:10.234+02:00 DEBUG 26356 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=?
-2024-03-08T18:59:10.235+02:00 TRACE 26356 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2]
+  <testcase name="addReviewWithUser()" classname="com.example.roboworld.web.HomeControllerTest" time="0.042"/>
+  <system-out><![CDATA[2024-03-09T12:41:51.670+02:00  INFO 3772 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.roboworld.web.HomeControllerTest]: HomeControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-09T12:41:51.672+02:00  INFO 3772 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.roboworld.RobotWorldApplication for test class com.example.roboworld.web.HomeControllerTest
+2024-03-09T12:41:51.677+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-09T12:41:51.679+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : insert into roles (role_type,id) values (?,default)
+2024-03-09T12:41:51.679+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [User]
+2024-03-09T12:41:51.681+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : insert into users (email,full_name,password,username,id) values (?,?,?,?,default)
+2024-03-09T12:41:51.681+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [111@123]
+2024-03-09T12:41:51.681+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Test Testov]
+2024-03-09T12:41:51.681+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [1234]
+2024-03-09T12:41:51.681+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (4:VARCHAR) <- [user]
+2024-03-09T12:41:51.682+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : insert into users_roles (user_id,roles_id) values (?,?)
+2024-03-09T12:41:51.682+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [8]
+2024-03-09T12:41:51.682+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:BIGINT) <- [8]
+2024-03-09T12:41:51.683+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (description,name,user_id,id) values (?,?,?,default)
+2024-03-09T12:41:51.683+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [testtttttttttt]
+2024-03-09T12:41:51.683+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Test T.]
+2024-03-09T12:41:51.684+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [8]
+2024-03-09T12:41:51.685+02:00 TRACE 3772 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2024-03-09T12:41:51.685+02:00 TRACE 3772 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created SecurityContextImpl [Null authentication]
+2024-03-09T12:41:51.685+02:00 TRACE 3772 --- [    Test worker] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-03-09T12:41:51.685+02:00 DEBUG 3772 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2024-03-09T12:41:51.685+02:00 DEBUG 3772 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]] to HttpSession [org.springframework.mock.web.MockHttpSession@48eb05e9]
+2024-03-09T12:41:51.686+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@20bd4fd2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69cd4267, org.springframework.security.web.context.SecurityContextHolderFilter@7d3d89fb, org.springframework.security.web.header.HeaderWriterFilter@603042a5, org.springframework.web.filter.CorsFilter@1ebb6e20, org.springframework.security.web.csrf.CsrfFilter@2d0ed017, org.springframework.security.web.authentication.logout.LogoutFilter@2f42f20f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@75c90ec5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5757ef9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62a30701, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2dad7323, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@85420, org.springframework.security.web.access.ExceptionTranslationFilter@5cfb4b71, org.springframework.security.web.access.intercept.AuthorizationFilter@271ced5f]] (1/1)
+2024-03-09T12:41:51.686+02:00 DEBUG 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /review/add
+2024-03-09T12:41:51.686+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/14)
+2024-03-09T12:41:51.686+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/14)
+2024-03-09T12:41:51.686+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/14)
+2024-03-09T12:41:51.686+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/14)
+2024-03-09T12:41:51.686+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CorsFilter (5/14)
+2024-03-09T12:41:51.688+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CsrfFilter (6/14)
+2024-03-09T12:41:51.688+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (7/14)
+2024-03-09T12:41:51.688+02:00 TRACE 3772 --- [    Test worker] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Ant [pattern='/users/logout', POST]
+2024-03-09T12:41:51.688+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (8/14)
+2024-03-09T12:41:51.688+02:00 TRACE 3772 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Did not match request to Ant [pattern='/users/login', POST]
+2024-03-09T12:41:51.688+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (9/14)
+2024-03-09T12:41:51.688+02:00 TRACE 3772 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : matchingRequestParameterName is required for getMatchingRequest to lookup a value, but not provided
+2024-03-09T12:41:51.688+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (10/14)
+2024-03-09T12:41:51.688+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RememberMeAuthenticationFilter (11/14)
+2024-03-09T12:41:51.688+02:00 TRACE 3772 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]] from SPRING_SECURITY_CONTEXT
+2024-03-09T12:41:51.689+02:00 DEBUG 3772 --- [    Test worker] s.s.w.a.r.RememberMeAuthenticationFilter : SecurityContextHolder not populated with remember-me token, as it already contained: 'UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]'
+2024-03-09T12:41:51.689+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (12/14)
+2024-03-09T12:41:51.689+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (13/14)
+2024-03-09T12:41:51.689+02:00 TRACE 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (14/14)
+2024-03-09T12:41:51.689+02:00 TRACE 3772 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Authorizing SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@10564688]
+2024-03-09T12:41:51.689+02:00 TRACE 3772 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Checking authorization on SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@10564688] using org.springframework.security.authorization.AuthenticatedAuthorizationManager@4d35f066
+2024-03-09T12:41:51.690+02:00 TRACE 3772 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Did not set SecurityContextHolder since already authenticated UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_User]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_User]]
+2024-03-09T12:41:51.690+02:00 DEBUG 3772 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /review/add
+2024-03-09T12:41:51.698+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2024-03-09T12:41:51.698+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [user]
+2024-03-09T12:41:51.699+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-09T12:41:51.700+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [8]
+2024-03-09T12:41:51.700+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-09T12:41:51.700+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [8]
+2024-03-09T12:41:51.701+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : insert into reviews (description,name,user_id,id) values (?,?,?,default)
+2024-03-09T12:41:51.702+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [testtttttt]
+2024-03-09T12:41:51.702+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Test T.]
+2024-03-09T12:41:51.702+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [8]
+2024-03-09T12:41:51.703+02:00 TRACE 3772 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-03-09T12:41:51.705+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : select count(*) from reviews r1_0
+2024-03-09T12:41:51.708+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : select r1_0.id,r1_0.description,r1_0.name,r1_0.user_id from reviews r1_0
+2024-03-09T12:41:51.709+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name,u1_0.password,u1_0.username,c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from users u1_0 left join courses c1_0 on u1_0.id=c1_0.lecturer_id where u1_0.id=?
+2024-03-09T12:41:51.710+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [8]
+2024-03-09T12:41:51.711+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-09T12:41:51.711+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [8]
+2024-03-09T12:41:51.713+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=?
+2024-03-09T12:41:51.713+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2]
+2024-03-09T12:41:51.714+02:00 DEBUG 3772 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=?
+2024-03-09T12:41:51.714+02:00 TRACE 3772 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [3]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
