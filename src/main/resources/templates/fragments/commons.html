@@ -62,6 +62,9 @@
         <li class="nav-item">
           <a class="nav-link" th:text="#{nav.profiles}" sec:authorize="hasRole('Admin')" th:href="@{/users/profiles}">Профили</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" th:text="#{nav.yourCourses}" sec:authorize="isAuthenticated()" th:href="@{/users/yourCourses}">Your courses</a>
+        </li>
         <li class="nav-item dropdown">
           <a th:text="#{nav.robotics}" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Какво е Роботиката?
@@ -130,7 +133,9 @@
           <li class="nav-item">
             <a class="nav-link"  sec:authorize="hasRole('Admin')" th:text="#{nav.profiles}" th:href="@{/users/profiles}">Profiles</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" th:text="#{nav.yourCourses}" sec:authorize="isAuthenticated()" th:href="@{/users/yourCourses}">Your courses</a>
+          </li>
             <li class="nav-item dropdown">
               <a th:text="#{nav.robotics}" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 What is Robotics?

@@ -4,6 +4,7 @@ import com.example.roboworld.model.entity.enums.AgeLimit;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "courses")
@@ -14,6 +15,7 @@ public class Course extends BaseEntity{
     private String description;
     private LocalDateTime start;
     private LocalDateTime end;
+    private List<User> students;
 
     public Course() {
     }
@@ -69,5 +71,13 @@ public class Course extends BaseEntity{
 
     public void setEnd(LocalDateTime end) {
         this.end = end;
+    }
+    @ManyToMany(mappedBy = "signInCourses", fetch = FetchType.EAGER)
+    public List<User> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<User> students) {
+        this.students = students;
     }
 }

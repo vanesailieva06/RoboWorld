@@ -6,7 +6,7 @@
 <nav th:replace="~{fragments/commons::nav}"></nav>
 <section class="courses9-12-info courses-info">
     <form role="search" class="search-bar">
-        <input class="form-control me-2" type="search" id="search-bar-9-to-12" placeholder="Enter course title" aria-label="Search">
+        <input class="form-control me-2 search-bar-input" type="search" id="search-bar-9-to-12" placeholder="Enter course title" aria-label="Search">
     </form>
     <h1>Курсове за деца от 9 до 12 години</h1>
     <div id="courses-section">
@@ -16,7 +16,7 @@
                 Nesciunt sed maiores iure, odit nam repellat beatae dolorum,
                 consequatur sequi quibusdam sunt molestiae ab recusandae
                 voluptatibus similique?</p>
-            <a class="see-more" th:href="@{/{title}/{id}(title = *{title}) (id= *{id})}">See more</a>        </article>
+            <a class="see-more" th:href="@{/courses/{id}(id= *{id})}">See more</a>        </article>
 
     </div>
 </section>

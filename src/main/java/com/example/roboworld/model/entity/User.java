@@ -13,7 +13,7 @@ public class User extends BaseEntity{
     private String password;
     private List<Role> roles;
     private List<Course> courses;
-
+    private List<Course> signInCourses;
 
     public User() {
     }
@@ -70,5 +70,14 @@ public class User extends BaseEntity{
 
     public void setCourses(List<Course> courses) {
         this.courses = courses;
+    }
+
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
+    public List<Course> getSignInCourses() {
+        return signInCourses;
+    }
+
+    public void setSignInCourses(List<Course> isSignIn) {
+        this.signInCourses = isSignIn;
     }
 }

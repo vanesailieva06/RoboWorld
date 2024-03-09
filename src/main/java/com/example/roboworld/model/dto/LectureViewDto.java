@@ -5,7 +5,6 @@ import java.time.LocalDateTime;
 public class LectureViewDto {
     private String lectureTitle;
 
-    private String lecture;
     private LocalDateTime started;
     private LocalDateTime ended;
 
@@ -21,13 +20,6 @@ public class LectureViewDto {
     }
 
 
-    public String getLecture() {
-        return lecture;
-    }
-
-    public void setLecture(String lecture) {
-        this.lecture = lecture;
-    }
 
     public LocalDateTime getStarted() {
         return started;

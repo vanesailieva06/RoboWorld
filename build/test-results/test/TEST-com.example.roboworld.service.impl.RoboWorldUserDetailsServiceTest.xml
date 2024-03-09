@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.roboworld.service.impl.RoboWorldUserDetailsServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-03-09T10:41:50" hostname="VANESAILIEVA" time="0.244">
+<testsuite name="com.example.roboworld.service.impl.RoboWorldUserDetailsServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-03-09T19:31:17" hostname="VANESAILIEVA" time="0.219">
   <properties/>
-  <testcase name="userFound()" classname="com.example.roboworld.service.impl.RoboWorldUserDetailsServiceTest" time="0.242"/>
-  <testcase name="userNotFound()" classname="com.example.roboworld.service.impl.RoboWorldUserDetailsServiceTest" time="0.002"/>
+  <testcase name="userFound()" classname="com.example.roboworld.service.impl.RoboWorldUserDetailsServiceTest" time="0.215"/>
+  <testcase name="userNotFound()" classname="com.example.roboworld.service.impl.RoboWorldUserDetailsServiceTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

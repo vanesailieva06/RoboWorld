@@ -715,7 +715,7 @@ footer {
   width: 70%;
   margin: 30px auto;
 }
-#search-bar{
+.search-bar-input{
   height: 45px;
   font-size: 22px;
 }
@@ -738,6 +738,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  margin-bottom: 70px;
 }
 
 .lecture-description{
@@ -745,13 +746,128 @@ footer {
 }
 .lectures-section article{
   padding: 30px;
-  background-color: #cccccc;
+  background-color: #e7e7e7;
   border-radius: 6px;
+  transition: all 2s;
 }
 .lectures-section button{
   background-color: transparent;
   border:none;
   font-family: Jura;
-  font-size: 40px;
+  color: navy;
+  font-size: 34px;
   font-weight: bold;
+}
+.course-purpose{
+  background-color: blue;
+  padding: 30px;
+  width: 60%;
+  border-radius: 20px;
+  margin: auto auto 70px;
+}
+.course-purpose a{
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  display: block;
+  width: 22%;
+  font-size: 22px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: white;
+  margin: 30px auto auto;
+  transition: all 2s;
+}
+.course-purpose h2{
+  font-size: 44px;
+  text-align: center;
+  padding-bottom: 16px;
+}
+.course-purpose-info{
+  width: 90%;
+  margin:auto;
+  color: white;
+}
+.course-purpose-info p{
+  font-size: 26px;
+}
+.course-purpose a:hover{
+  background-color: dimgray;
+  color: white;
+  padding: 12px 24px;
+}
+.lectures-section article:hover{
+  background-color: #b0b0b0;
+  border-radius: 12px;
+}
+.other-courses{
+  margin-bottom: 60px;
+}
+.other-courses h1{
+  font-size: 55px;
+}
+.other-courses-div{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 90%;
+  margin: auto;
+}
+.other-courses-div article{
+  background-color: white;
+  padding: 60px;
+  border-radius: 20px;
+  transition: all 2s;
+}
+.other-courses-div a{
+  text-decoration: none;
+  color: navy;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Jura;
+  padding-bottom: 20px;
+}
+.other-courses-div p{
+  font-size: 24px;
+}
+.other-courses-div article:hover{
+  background-color: #9494ff;
+  border-radius: 30px;
+}
+.your-courses{
+  width: 80%;
+  margin: auto;
+}
+.your-courses-info{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.your-courses-div{
+  padding: 50px;
+  background-color: rgba(204, 204, 204, 0.48);
+  border-radius: 20px;
+  transition: all 2s;
+}
+.your-courses-div a{
+  color: black;
+  font-family: Jura;
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.your-courses-div p{
+  font-size: 24px;
+}
+.your-courses-section{
+  margin-bottom: 80px;
+}
+.your-courses-section h1{
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.your-courses-div:hover{
+  background-color: #b9b9b9;
 }
