@@ -31,20 +31,22 @@ public class TestDataUtil {
         course.setStart(LocalDateTime.of(2024, 3, 12, 0, 0));
         course.setAgeLimit(AgeLimit.NineToTwelve);
         course.setTitle(title);
+
         User lecturer = new User();
         Role role = new Role();
         role.setRoleType(RoleType.Lecturer);
+        roleRepository.save(role);
         lecturer.setRoles(List.of(role));
         lecturer.setPassword("1234");
         lecturer.setEmail("111@123");
         lecturer.setFullName("Test Testov");
         lecturer.setCourses(List.of(course));
         lecturer.setUsername("test lecturer");
-        course.setLecturer(lecturer);
-
-        courseRepository.save(course);
         userRepository.save(lecturer);
-        roleRepository.save(role);
+        course.setLecturer(lecturer);
+        courseRepository.save(course);
+
+
         return course;
     }
 

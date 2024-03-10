@@ -52,9 +52,12 @@ public class CourseServiceImpl implements CourseService {
     public void signInUp(Long id, UserDetails userDetails) {
         User user = userRepository.findByUsername(userDetails.getUsername()).orElseThrow();
         Course course = courseRepository.findById(id).orElseThrow();
+
         if (!user.getCourses().contains(course)) {
             user.getSignInCourses().add(course);
+            course.getStudents().add(user);
         }
+        courseRepository.save(course);
         userRepository.save(user);
     }
 

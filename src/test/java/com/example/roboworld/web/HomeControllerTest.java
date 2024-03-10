@@ -37,14 +37,14 @@ public class HomeControllerTest {
     private ReviewRepository reviewRepository;
     @BeforeEach
     void setUp(){
-        //testDataUserUtil.cleanUp();
+        testDataUserUtil.cleanUp();
         testDataUtil.cleanUpReview();
     }
 
     @AfterEach
     void tearDown(){
         testDataUtil.cleanUpReview();
-        //testDataUserUtil.cleanUp();
+        testDataUserUtil.cleanUp();
     }
 
     private static final String TEST_TITLE = "test title";

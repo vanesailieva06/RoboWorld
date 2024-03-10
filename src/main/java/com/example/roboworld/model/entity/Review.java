@@ -1,9 +1,6 @@
 package com.example.roboworld.model.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "reviews")
@@ -14,7 +11,7 @@ public class Review extends BaseEntity{
 
     public Review() {
     }
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     public User getUser() {
         return user;
     }
