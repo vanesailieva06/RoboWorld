@@ -26,7 +26,8 @@ public class SecurityConfig {
                         authorizeRequests -> authorizeRequests.requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
                                 // Allow anyone to see the home page, the registration page and the login form
                                 .requestMatchers(EndpointRequest.toAnyEndpoint()).permitAll()
-                                .requestMatchers("/", "/users/login", "/users/register", "/users/login-error", "/about-us").permitAll()
+                                .requestMatchers("/", "/users/login", "/users/register", "/users/login-error", "/about-us",
+                                        "/robotics/etymology", "/robotics/usage", "/robotics/components", "/robotics/history","/robotics/directions").permitAll()
 //                        .requestMatchers(HttpMethod.GET, "/offer/**").permitAll() authenticated
                                 .requestMatchers("/error").permitAll()
                                 .requestMatchers("/users/profiles", "/users/delete/{id}").hasRole(RoleType.Admin.name())
