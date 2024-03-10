@@ -23,7 +23,7 @@
 <body>
 <nav class="navbar normal-nav navbar-expand-lg" th:fragment="nav">
   <div class="container-fluid">
-    <a th:text="#{app.title}" class="navbar-brand logo" href="/"
+    <a class="navbar-brand logo" href="/"
     >РобоСвят </a><i class="fa-solid fa-robot"></i
   >
     <button
@@ -40,58 +40,53 @@
     <div class="collapse navbar-collapse nav" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" th:text="#{nav.home}"  th:href="@{/}">Начало</a>
+          <a class="nav-link active" aria-current="page"  th:href="@{/}">Начало</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" th:text="#{nav.login}" th:href="@{/users/login}" sec:authorize="!isAuthenticated()">Вход</a>
+          <a class="nav-link"  th:href="@{/users/login}" sec:authorize="!isAuthenticated()">Вход</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-             aria-expanded="false" th:text="#{nav.courses}" th:href="@{/courses}" sec:authorize="isAuthenticated()">Курсове</a>
+             aria-expanded="false"  th:href="@{/courses}" sec:authorize="isAuthenticated()">Курсове</a>
           <ul class="dropdown-menu">
-            <li><a th:text="#{nav.sixToEight}" class="dropdown-item" th:href="@{/courses/sixToEight}">6-8години</a></li>
-            <li><a th:text="#{nav.nineToTwelve}" class="dropdown-item" th:href="@{/courses/nineToTwelve}">9-12години</a></li>
-            <li><a class="dropdown-item" th:text="#{nav.thirteenToFifteen}" th:href="@{/courses/thirteenToFifteen}">13-15години</a></li>
-            <li><a class="dropdown-item" th:text="#{nav.sixteenToEighteen}" th:href="@{/courses/sixteenToEighteen}">16-18години</a></li>
+            <li><a class="dropdown-item" th:href="@{/courses/sixToEight}">6-8години</a></li>
+            <li><a  class="dropdown-item" th:href="@{/courses/nineToTwelve}">9-12години</a></li>
+            <li><a class="dropdown-item" th:href="@{/courses/thirteenToFifteen}">13-15години</a></li>
+            <li><a class="dropdown-item" th:href="@{/courses/sixteenToEighteen}">16-18години</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" th:text="#{nav.forum}" sec:authorize="isAuthenticated()" th:href="@{/forum/all}">Форум</a>
+          <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/forum/all}">Форум</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" th:text="#{nav.profiles}" sec:authorize="hasRole('Admin')" th:href="@{/users/profiles}">Профили</a>
+          <a class="nav-link"  sec:authorize="hasRole('Admin')" th:href="@{/users/profiles}">Профили</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" th:text="#{nav.yourCourses}" sec:authorize="isAuthenticated()" th:href="@{/users/yourCourses}">Your courses</a>
+          <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/users/yourCourses}">Your courses</a>
         </li>
         <li class="nav-item dropdown">
-          <a th:text="#{nav.robotics}" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Какво е Роботиката?
           </a>
           <ul class="dropdown-menu">
-            <li><a th:text="#{nav.etymology}" class="dropdown-item" th:href="@{/robotics/etymology}">Етимология</a></li>
-            <li><a th:text="#{nav.history}" class="dropdown-item" th:href="@{/robotics/history}">История</a></li>
-            <li><a class="dropdown-item" th:text="#{nav.directions}" th:href="@{/robotics/directions}">Направления</a></li>
-            <li><a class="dropdown-item" th:text="#{nav.components}" th:href="@{/robotics/components}">Компоненти</a></li>
-            <li><a class="dropdown-item" th:text="#{nav.usage}" th:href="@{/robotics/usage}">Употреба</a></li>
+            <li><a  class="dropdown-item" th:href="@{/robotics/etymology}">Етимология</a></li>
+            <li><a  class="dropdown-item" th:href="@{/robotics/history}">История</a></li>
+            <li><a class="dropdown-item"  th:href="@{/robotics/directions}">Направления</a></li>
+            <li><a class="dropdown-item"  th:href="@{/robotics/components}">Компоненти</a></li>
+            <li><a class="dropdown-item"  th:href="@{/robotics/usage}">Употреба</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" th:text="#{nav.aboutUs}" th:href="@{/about-us}">За нас</a>
+          <a class="nav-link"  th:href="@{/about-us}">За нас</a>
         </li>
         <li class="nav-item">
           <form sec:authorize="isAuthenticated()" th:method="post"
                 th:action="@{/users/logout}">
-            <input type="submit" th:value="#{nav.logout}" class="btn logout nav-link" value="Изход"/>
+            <input type="submit"  class="btn logout nav-link" value="Изход"/>
           </form>
         </li>
-        <li class="nav-item switch-li">
-          <button th:text="|#{switch-en} /|" class="switch-lang" onclick="window.location.href='http://localhost:8080/?localeData=en'">
-          </button>
-          <button th:text="#{switch-bg}" class="switch-lang" onclick="window.location.href='http://localhost:8080/?localeData=bg'">
-          </button>
-        </li>
+
       </ul>
     </div>
   </div>
@@ -101,76 +96,71 @@
 
 <nav class="navbar bg-body-tertiary responsive-nav">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/" th:text="#{app.title}">RoboWorld</a>
+    <a class="navbar-brand" href="/">РобоСвят</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" th:text="#{app.title}">RoboWorld</h5>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">РобоСвят</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" sec:authorize="!isAuthenticated()" th:href="@{/}" th:text="#{nav.home}">Home</a>
+            <a class="nav-link active" aria-current="page" sec:authorize="!isAuthenticated()" th:href="@{/}" >Начало</a>
           </li>
 
           <li class="nav-item dropdown">
-            <a th:text="#{nav.courses}" sec:authorize="isAuthenticated()" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Courses
+            <a sec:authorize="isAuthenticated()" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Курсове
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" th:text="#{nav.sixToEight}" th:href="@{/courses/sixToEight}">6-8 years old</a></li>
-              <li><a class="dropdown-item" th:text="#{nav.nineToTwelve}" th:href="@{/courses/nineToTwelve}">9-12 years old</a></li>
-              <li><a class="dropdown-item" th:text="#{nav.thirteenToFifteen}" th:href="@{/courses/thirteenToFifteen}">13-15 years old</a></li>
-              <li><a class="dropdown-item" th:text="#{nav.sixteenToEighteen}" th:href="@{/courses/sixteenToEighteen}">16-18 years old</a></li>
+              <li><a class="dropdown-item" th:href="@{/courses/sixToEight}">6-8 години</a></li>
+              <li><a class="dropdown-item"  th:href="@{/courses/nineToTwelve}">9-12 години</a></li>
+              <li><a class="dropdown-item"  th:href="@{/courses/thirteenToFifteen}">13-15 години</a></li>
+              <li><a class="dropdown-item"  th:href="@{/courses/sixteenToEighteen}">16-18 години</a></li>
             </ul>
           </li>
           <li class="nav-item">
-          <a class="nav-link" sec:authorize="isAuthenticated()" th:text="#{nav.forum}" th:href="@{/forum/all}">Forum</a>
+          <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/forum/all}">Форум</a>
         </li>
           <li class="nav-item">
-            <a class="nav-link"  sec:authorize="hasRole('Admin')" th:text="#{nav.profiles}" th:href="@{/users/profiles}">Profiles</a>
+            <a class="nav-link"  sec:authorize="hasRole('Admin')" th:href="@{/users/profiles}">Профили</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" th:text="#{nav.yourCourses}" sec:authorize="isAuthenticated()" th:href="@{/users/yourCourses}">Your courses</a>
+            <a class="nav-link"  sec:authorize="isAuthenticated()" th:href="@{/users/yourCourses}">Твоите курсове</a>
           </li>
             <li class="nav-item dropdown">
-              <a th:text="#{nav.robotics}" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                What is Robotics?
+              <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Какво е Роботиката?
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" th:text="#{nav.etymology}" th:href="@{/robotics/etymology}">Etymology</a></li>
-                <li><a class="dropdown-item" th:text="#{nav.history}" th:href="@{/robotics/history}">History</a></li>
-                <li><a class="dropdown-item" th:text="#{nav.directions}" th:href="@{/robotics/directions}">Directions</a></li>
-                <li><a class="dropdown-item" th:text="#{nav.components}" th:href="@{/robotics/components}">Components</a></li>
-                <li><a class="dropdown-item" th:text="#{nav.usage}" th:href="@{/robotics/usage}">Usage</a></li>
+                <li><a class="dropdown-item"  th:href="@{/robotics/etymology}">Етимология</a></li>
+                <li><a class="dropdown-item"  th:href="@{/robotics/history}">История</a></li>
+                <li><a class="dropdown-item"  th:href="@{/robotics/directions}">Направления</a></li>
+                <li><a class="dropdown-item"  th:href="@{/robotics/components}">Компоненти</a></li>
+                <li><a class="dropdown-item"  th:href="@{/robotics/usage}">Употреба</a></li>
 
               </ul>
             </li>
           <li class="nav-item">
-            <a class="nav-link" th:text="#{nav.aboutUs}" th:href="@{/about-us}">About us</a>
+            <a class="nav-link" th:href="@{/about-us}">За Нас</a>
           </li>
           <li class="nav-item">
             <form sec:authorize="isAuthenticated()" th:method="post"
                   th:action="@{/users/logout}">
-              <input type="submit" th:value="#{nav.logout}" class="btn logout nav-link" value="Изход"/>
+              <input type="submit"  class="btn logout nav-link" value="Изход"/>
             </form>
           </li>
-          <li class="nav-item">
-            <button th:text="|#{switch-en} /|" class="switch-lang" onclick="window.location.href='http://localhost:8080/?localeData=en'">
-            </button>
-            <button th:text="#{switch-bg}" class="switch-lang" onclick="window.location.href='http://localhost:8080/?localeData=bg'">
-            </button>
-          </li>
+
           </ul>
       </div>
     </div>
   </div>
 </nav>
 <footer th:fragment="footer">
-      <span  th:text="#{app.title}" class="logo article-logo"
+      <span  class="logo article-logo"
       >РобоСвят</span><i class="fa-solid fa-robot"></i
 >
   <div class="social-media">

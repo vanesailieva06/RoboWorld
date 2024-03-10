@@ -6,7 +6,7 @@
   <body class="forum">
     <nav th:replace="~{fragments/commons::nav}">
     </nav>
-    <h1 th:text="#{forum.h1}">Форум</h1>
+    <h1>Форум</h1>
     <section class="discussion">
       <div class="discussion-info" th:each="f : ${forum}" th:object="${f}">
         <a th:href="@{/forum/{id}(id = *{id})}"
