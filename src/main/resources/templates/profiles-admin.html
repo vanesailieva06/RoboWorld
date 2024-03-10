@@ -10,9 +10,9 @@
     <table class="table table-striped">
       <thead>
       <tr>
-        <th th:text="#{profiles.id}" scope="col">Номер</th>
-        <th th:text="#{profiles.name}" scope="col">Име</th>
-        <th th:text="#{profiles.username}" scope="col">Потребителско име</th>
+        <th  scope="col">Номер</th>
+        <th  scope="col">Име</th>
+        <th  scope="col">Потребителско име</th>
         <th scope="col"></th>
       </tr>
       </thead>
@@ -21,7 +21,7 @@
         <th th:text="*{id}" scope="row" >1</th>
         <td th:text="*{fullName}">Mark</td>
         <td th:text="*{username}">Otto</td>
-        <td><a class="delete-user" th:text="#{profiles.delete}" th:href="@{/users/delete/{id}(id = *{id})}">Delete</a></td>
+        <td><a class="delete-user" th:href="@{/users/delete/{id}(id = *{id})}">Изтрий</a></td>
       </tr>
       </tbody>
     </table>

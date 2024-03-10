@@ -19,13 +19,13 @@
 
 <section class="course-purpose">
     <div class="course-purpose-info">
-    <h2>What the course is for?</h2>
+    <h2>За какво е курсът?</h2>
     <p th:text="${courseDetails.description}"></p>
-    <a th:href="@{/courses/signInUp/{id}(id=${courseDetails.id})}">Sign in up</a>
+    <a th:href="@{/courses/signInUp/{id}(id=${courseDetails.id})}">Запиши се</a>
     </div>
 </section>
 <section class="other-courses">
-    <h1>Other Courses</h1>
+    <h1>Други Курсове</h1>
     <div class="other-courses-div">
     <article th:each="c : ${otherCourses}" th:object="${c}">
         <a th:href="@{/courses/{id}(id = *{id})}" th:text="*{title}">Title Course</a>

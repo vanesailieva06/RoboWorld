@@ -6,7 +6,7 @@
 <nav th:replace="~{fragments/commons::nav}"></nav>
 
 <section class="your-courses-section">
-    <h1>Your courses</h1>
+    <h1>Твоите курсове</h1>
     <section class="your-courses-info">
     <div th:each="c : ${yourCourses}" th:object="${c}" class="your-courses-div">
         <a th:href="@{/courses/{id}(id = *{id})}" th:text="*{title}"></a>

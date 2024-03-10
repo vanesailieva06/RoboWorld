@@ -20,8 +20,8 @@
         <form id="commentForm" method="POST"
               th:action="@{/api/comments/{forumId}(forumId=${id})}">
             <div class="form-group">
-                <h4 th:text="#{forumDet.commentH4}">Leave a comment </h4>
-                <label th:text="#{forumDet.comment}" for="message">Comment</label>
+                <h4>Напиши коментар</h4>
+                <label for="message">Коментар</label>
                 <textarea name="message"
                           id="message"
                           cols="30"
@@ -34,7 +34,7 @@
                 <input type="submit"
                        class="btn btn-post-comment btn-secondary btn-lg"
                        id="postComment"
-                       th:value="#{forumDet.postComment}"/>
+                       value="Коментирай"/>
             </div>
         </form>
     </div>
