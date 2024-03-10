@@ -53,7 +53,7 @@ public class CoursesController {
     }
 
     @GetMapping("/signInUp/{id}")
-    public String signInUp(@PathVariable Long id,@AuthenticationPrincipal UserDetails userDetails){
+    public String signInUp(@PathVariable Long id,@AuthenticationPrincipal UserDetails userDetails, Model model){
         courseService.signInUp(id, userDetails);
         return "redirect:/courses/"+ id;
     }
