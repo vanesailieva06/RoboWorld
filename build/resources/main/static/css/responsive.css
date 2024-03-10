@@ -119,10 +119,10 @@
         width: 80%;
     }
     .header-info div{
-        width: 27%;
+        width: 40%;
     }
     .advantage-article1 div{
-        width: 52%;
+        width: 75%;
     }
     .advantages{
         gap: 20px;
@@ -209,7 +209,7 @@
         width: 90%;
     }
     .header-info div{
-        width: 30%;
+        width: 46%;
     }
     .advantages{
         grid-template-areas:
@@ -218,7 +218,7 @@
         "advantage5 advantage6";
     }
     .advantage-article1 div{
-        width: 45%;
+        width: 70%;
     }
     .advantages{
         gap: 20px;
@@ -329,12 +329,13 @@
         "advantage5"
         "advantage6";
         width: 90%;
+        margin: auto;
     }
     .advantage-article1 h1, .advantage-article1 span{
         font-size: 38px;
     }
     .advantage-article1 div{
-        width: 40%;
+        width: 57%;
     }
     .reviews-div{
         width: 90%;
@@ -357,7 +358,7 @@
         gap: 30px;
     }
     .header-info div{
-        width: 50%;
+        width: 65%;
     }
     .about-us main{
         width: 90%;
@@ -374,7 +375,7 @@
 }
 @media (max-width: 450px) {
     .header-info div{
-        width: 63%;
+        width: 110%;
     }
     .courses-details{
         width: 90%;
@@ -407,7 +408,7 @@
         width: 80%;
     }
     .advantage-article1 div{
-        width: 52%;
+        width: 88%;
     }
     .reviews-div{
         width: 90%;
@@ -461,8 +462,11 @@
     }
     .reviews-div{
         grid-template-columns: repeat(1, 1fr);
-        width: 80%;
+        width: 90%;
         gap: 30px;
+    }
+    .add-review{
+        padding: 20px;
     }
     #message{
         width: 90%;
@@ -491,5 +495,8 @@
     }
     .etymology-info, .history-info, .directions-info, .components-info, .usage-info{
         width: 90%;
+    }
+    .header-section{
+        height: 750px;
     }
 }
