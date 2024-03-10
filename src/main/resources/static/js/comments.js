@@ -85,7 +85,7 @@ function asComment(c) {
     return commentHtml
 }
 
-fetch(`http://localhost:8080/api/comments/${forumId}`).
+fetch(`https://roboworld.greenplant-7af38050.westeurope.azurecontainerapps.io/api/comments/${forumId}`).
 then(response => response.json()).
 then(data => {
     for (let comment of data) {
