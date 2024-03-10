@@ -14,6 +14,7 @@ public class User extends BaseEntity{
     private List<Role> roles;
     private List<Course> courses;
     private List<Course> signInCourses;
+    private List<Review> reviews;
 
     public User() {
     }
@@ -63,7 +64,7 @@ public class User extends BaseEntity{
         this.roles = roles;
     }
 
-    @OneToMany(mappedBy = "lecturer", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "lecturer", cascade = CascadeType.REMOVE)
     public List<Course> getCourses() {
         return courses;
     }
@@ -79,5 +80,15 @@ public class User extends BaseEntity{
 
     public void setSignInCourses(List<Course> isSignIn) {
         this.signInCourses = isSignIn;
+    }
+
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+    public List<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<Review> reviews) {
+        this.reviews = reviews;
     }
 }

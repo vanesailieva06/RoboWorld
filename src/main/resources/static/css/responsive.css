@@ -1,6 +1,6 @@
 @media (max-width: 1400px) and (min-width: 1250px) {
     .header-info div{
-        width: 25%;
+        width: 38%;
     }
     .header-info{
         padding-right: 0;
@@ -15,13 +15,13 @@
         width: 100%;
     }
     .header-section{
-        height: 650px;
+        height: 500px;
     }
     .header-image img{
-        height: 650px;
+        height: 500px;
     }
     .advantage-article1 div{
-        width: 43%;
+        width: 75%;
     }
     .reviews-div{
         width: 100%;

@@ -4,7 +4,6 @@ import com.example.roboworld.model.entity.enums.AgeLimit;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -17,6 +16,7 @@ public class Course extends BaseEntity{
     private LocalDateTime start;
     private LocalDateTime end;
     private List<User> students;
+    private List<Lecture> lectures;
 
     public Course() {
     }
@@ -80,5 +80,14 @@ public class Course extends BaseEntity{
 
     public void setStudents(List<User> students) {
         this.students = students;
+    }
+
+    @OneToMany(mappedBy = "course", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+    public List<Lecture> getLectures() {
+        return lectures;
+    }
+
+    public void setLectures(List<Lecture> lectures) {
+        this.lectures = lectures;
     }
 }
