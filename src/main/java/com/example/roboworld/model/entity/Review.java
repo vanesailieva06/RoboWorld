@@ -11,7 +11,7 @@ public class Review extends BaseEntity{
 
     public Review() {
     }
-    @ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+    @ManyToOne()
     public User getUser() {
         return user;
     }

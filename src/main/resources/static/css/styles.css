@@ -37,13 +37,13 @@ nav .logout{
 .header-section {
   display: flex;
   flex-direction: row;
-  height: 700px;
+  height: 550px;
   margin-top: 50px;
   background-color: white;
   border-radius: 8px;
 }
 .header-image img {
-  height: 700px;
+  height: 550px;
 }
 .header-info {
   padding: 90px;
@@ -647,7 +647,7 @@ footer {
   padding-right: 12px;
 }
 .header-info div{
-  width: 28%;
+  width: 35%;
   background-color: blue;
   padding: 10px 20px;
   border-radius: 10px;
@@ -665,7 +665,7 @@ footer {
   color: white;
 }
 .advantage-article1 div{
-  width: 45%;
+  width: 60%;
   background-color: blue;
   padding: 10px 20px;
   border-radius: 10px;
