@@ -648,7 +648,6 @@ footer {
 }
 .header-info div{
   width: 28%;
-  margin: auto;
   background-color: blue;
   padding: 10px 20px;
   border-radius: 10px;
@@ -667,7 +666,6 @@ footer {
 }
 .advantage-article1 div{
   width: 45%;
-  margin: auto;
   background-color: blue;
   padding: 10px 20px;
   border-radius: 10px;

@@ -1,9 +1,10 @@
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: "jdbc:mysql://localhost:3306/roboworld?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC"
-    username:  ${MYSQL_USER:root}
-    password: ${MYSQL_PASSWORD:Vanesa06}
+    username: ${MYSQL_USER:vanesa}
+    password: ${MYSQL_PASSWORD:v.H.i.2006}
+    url: jdbc:mysql://roboworld.mysql.database.azure.com:3306/roboworld?createDatabaseIfNotExist=true
+
   servlet:
     multipart:
       max-file-size: 1MB
