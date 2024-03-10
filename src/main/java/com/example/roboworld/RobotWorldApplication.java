@@ -26,7 +26,7 @@ public class RobotWorldApplication implements WebMvcConfigurer {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
         messageSource.setBasename("lang/messages");
         messageSource.setDefaultEncoding("UTF-8");
-        System.out.println(messageSource.getMessage("hello", null, Locale.of("bg", "BG")));
+        //System.out.println(messageSource.getMessage("hello", null, Locale.of("bg", "BG")));
         SpringApplication.run(RobotWorldApplication.class, args);
     }
 
