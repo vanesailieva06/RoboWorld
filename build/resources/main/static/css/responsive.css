@@ -1,10 +1,18 @@
 @media (max-width: 1400px) and (min-width: 1250px) {
     .header-info div{
         width: 25%;
-
     }
     .header-info{
         padding-right: 0;
+    }
+    .courses-details{
+        width: 90%;
+    }
+    .course-purpose{
+        width: 70%;
+    }
+    .other-courses-div{
+        width: 100%;
     }
     .header-section{
         height: 650px;
@@ -28,6 +36,18 @@
     }
     .header-image{
         display: none;
+    }
+    .courses-details{
+        width: 90%;
+    }
+    .course-purpose{
+        width: 70%;
+    }
+    .other-courses-div{
+        width: 100%;
+    }
+    .lectures-section{
+        grid-template-columns: repeat(1, 1fr);
     }
     .header-info{
         width: 80%;
@@ -58,6 +78,19 @@
     }
     .discussion-info{
         height:500px;
+    }
+    .courses-details{
+        width: 90%;
+    }
+    .course-purpose{
+        width: 80%;
+    }
+    .other-courses-div{
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+    .lectures-section{
+        grid-template-columns: repeat(1, 1fr);
     }
     .discussion-info{
         width: 95%;
@@ -114,6 +147,22 @@
     .normal-nav{
         display: none;
     }
+    .courses-details{
+        width: 90%;
+    }
+    .course-purpose{
+        width: 90%;
+    }
+    .course-purpose a{
+        width: 25%;
+    }
+    .other-courses-div{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+    .lectures-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .about-us main{
         width: 80%;
     }
@@ -122,6 +171,11 @@
     }
     #commentCtnr div{
         width: 90%;
+    }
+    .courses-info div{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 70px;
     }
 
     .forum-details{
@@ -187,6 +241,33 @@
 @media (max-width: 600px) and (min-width: 450px){
     .header-section{
         width: 95%;
+    }
+    .courses-details{
+        width: 90%;
+    }
+    .course-purpose{
+        width: 100%;
+    }
+    .course-purpose a{
+        width: 36%;
+    }
+    .other-courses-div{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .lectures-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses-info div{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 70px;
+    }
+    .search-bar{
+        width: 90%;
+    }
+    .courses-info h1{
+        font-size: 50px;
     }
     .about-us main{
         width: 90%;
@@ -294,6 +375,33 @@
 @media (max-width: 450px) {
     .header-info div{
         width: 63%;
+    }
+    .courses-details{
+        width: 90%;
+    }
+    .course-purpose{
+        width: 100%;
+    }
+    .course-purpose a{
+        width: 54%;
+    }
+    .other-courses-div{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .lectures-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses-info div{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 70px;
+    }
+    .search-bar{
+        width: 90%;
+    }
+    .courses-info h1{
+        font-size: 50px;
     }
     .login-form, .register-form{
         width: 80%;

@@ -28,7 +28,7 @@ public class UserControllerTest {
 
     @BeforeEach
     public void setUp(){
-       testDataUserUtil.cleanUp();
+//       testDataUserUtil.cleanUp();
     }
     @AfterEach
     public void teaDown(){
@@ -49,7 +49,7 @@ public class UserControllerTest {
         ).andExpect(status().is3xxRedirection());
 
         Assertions.assertEquals(1, userRepository.count());
-        Assertions.assertEquals(TEST_USER_EMAIL, userRepository.findTopByEmail(TEST_USER_EMAIL).orElseThrow().getEmail());
+        Assertions.assertEquals(TEST_USER_EMAIL, userRepository.findByEmail(TEST_USER_EMAIL).orElseThrow().getEmail());
     }
 
 }
