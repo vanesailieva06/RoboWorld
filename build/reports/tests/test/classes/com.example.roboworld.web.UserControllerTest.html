@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - UserControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>UserControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.roboworld.web.html">com.example.roboworld.web</a> &gt; UserControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.152s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testRegisterUser()"></a>
+<h3 class="failures">testRegisterUser()</h3>
+<span class="code">
+<pre>java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.example.roboworld.web.UserControllerTest.testRegisterUser(UserControllerTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+	Suppressed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [integrity constraint violation: foreign key no action ; FK8OMQ0TC18JD43BU5TJH6JVRAQ table: COMMENTS] [delete from users where id=?]; SQL [delete from users where id=?]; constraint [FK8OMQ0TC18JD43BU5TJH6JVRAQ]
+		at app//org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+		at app//org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+		at app//org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:565)
+		at app//org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794)
+		at app//org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757)
+		at app//org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:669)
+		at app//org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:419)
+		at app//org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+		at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+		at app//org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+		at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+		at app//org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164)
+		at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+		at app//org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+		at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+		at app//org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+		at app/jdk.proxy3/jdk.proxy3.$Proxy156.deleteAll(Unknown Source)
+		at app//com.example.roboworld.util.TestDataUserUtil.cleanUp(TestDataUserUtil.java:52)
+		at app//com.example.roboworld.web.UserControllerTest.teaDown(UserControllerTest.java:35)
+		at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
+		at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+		at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+		at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+		at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+		at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+		at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptAfterEachMethod(TimeoutExtension.java:110)
+		at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+		at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+		at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+		at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+		at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+		at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+		at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+		at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+		at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:521)
+		at app//org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeAfterEachMethodAdapter$24(ClassBasedTestDescriptor.java:511)
+		at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachMethods$10(TestMethodTestDescriptor.java:244)
+		at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:277)
+		at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+		at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:277)
+		at app//org.junit.platform.commons.util.CollectionUtils.forEachInReverseOrder(CollectionUtils.java:217)
+		at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:276)
+		at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachMethods(TestMethodTestDescriptor.java:242)
+		at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:143)
+		... 60 more
+	Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [integrity constraint violation: foreign key no action ; FK8OMQ0TC18JD43BU5TJH6JVRAQ table: COMMENTS] [delete from users where id=?]
+		at app//org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:62)
+		at app//org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+		at app//org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+		at app//org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+		at app//org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:107)
+		at app//org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40)
+		at app//org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:52)
+		at app//org.hibernate.persister.entity.mutation.AbstractDeleteCoordinator.doStaticDelete(AbstractDeleteCoordinator.java:279)
+		at app//org.hibernate.persister.entity.mutation.AbstractDeleteCoordinator.coordinateDelete(AbstractDeleteCoordinator.java:87)
+		at app//org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:2979)
+		at app//org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:131)
+		at app//org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632)
+		at app//org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499)
+		at app//org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:363)
+		at app//org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41)
+		at app//org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+		at app//org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1423)
+		at app//org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:504)
+		at app//org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2339)
+		at app//org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1996)
+		at app//org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+		at app//org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+		at app//org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+		at app//org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+		at app//org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:561)
+		... 102 more
+	Caused by: java.sql.SQLIntegrityConstraintViolationException: integrity constraint violation: foreign key no action ; FK8OMQ0TC18JD43BU5TJH6JVRAQ table: COMMENTS
+		at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+		at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+		at org.hsqldb.jdbc.JDBCPreparedStatement.fetchResult(Unknown Source)
+		at org.hsqldb.jdbc.JDBCPreparedStatement.executeUpdate(Unknown Source)
+		at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+		at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+		at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
+		... 123 more
+	Caused by: org.hsqldb.HsqlException: integrity constraint violation: foreign key no action ; FK8OMQ0TC18JD43BU5TJH6JVRAQ table: COMMENTS
+		at app//org.hsqldb.error.Error.error(Unknown Source)
+		at app//org.hsqldb.StatementDML.performReferentialActions(Unknown Source)
+		at app//org.hsqldb.StatementDML.delete(Unknown Source)
+		at app//org.hsqldb.StatementDML.executeDeleteStatement(Unknown Source)
+		at app//org.hsqldb.StatementDML.getResult(Unknown Source)
+		at app//org.hsqldb.StatementDMQL.execute(Unknown Source)
+		at app//org.hsqldb.Session.executeCompiledStatement(Unknown Source)
+		at app//org.hsqldb.Session.execute(Unknown Source)
+		... 128 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testRegisterUser()</td>
+<td class="failures">0.152s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-03-22T18:45:21.300+02:00  INFO 23292 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.roboworld.web.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-22T18:45:21.303+02:00  INFO 23292 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.roboworld.RobotWorldApplication for test class com.example.roboworld.web.UserControllerTest
+2024-03-22T18:45:21.313+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@d5b9704, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@326471ab, org.springframework.security.web.context.SecurityContextHolderFilter@98be09f, org.springframework.security.web.header.HeaderWriterFilter@1f7e6c3a, org.springframework.web.filter.CorsFilter@66af6b7b, org.springframework.security.web.csrf.CsrfFilter@44a83ca4, org.springframework.security.web.authentication.logout.LogoutFilter@6ac3ceda, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@285290a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2acec770, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b481d77, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@647b7f63, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e232d07, org.springframework.security.web.access.ExceptionTranslationFilter@47a1b2f7, org.springframework.security.web.access.intercept.AuthorizationFilter@789f27e5]] (1/1)
+2024-03-22T18:45:21.313+02:00 DEBUG 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /users/register
+2024-03-22T18:45:21.313+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/14)
+2024-03-22T18:45:21.313+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/14)
+2024-03-22T18:45:21.313+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/14)
+2024-03-22T18:45:21.313+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/14)
+2024-03-22T18:45:21.313+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CorsFilter (5/14)
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking CsrfFilter (6/14)
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (7/14)
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Ant [pattern='/users/logout', POST]
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking UsernamePasswordAuthenticationFilter (8/14)
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Did not match request to Ant [pattern='/users/login', POST]
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (9/14)
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : matchingRequestParameterName is required for getMatchingRequest to lookup a value, but not provided
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (10/14)
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking RememberMeAuthenticationFilter (11/14)
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Created SecurityContextImpl [Null authentication]
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (12/14)
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (13/14)
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (14/14)
+2024-03-22T18:45:21.314+02:00 TRACE 23292 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Authorizing SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@214e42a1]
+2024-03-22T18:45:21.315+02:00 TRACE 23292 --- [    Test worker] estMatcherDelegatingAuthorizationManager : Checking authorization on SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@214e42a1] using org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$$Lambda$1504/0x000000080161b520@2ce33999
+2024-03-22T18:45:21.316+02:00 DEBUG 23292 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /users/register
+2024-03-22T18:45:21.416+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2024-03-22T18:45:21.416+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) &lt;- [pesho]
+2024-03-22T18:45:21.418+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select sic1_0.students_id,sic1_1.id,sic1_1.age_limit,sic1_1.description,sic1_1.end,l1_0.id,l1_0.email,l1_0.full_name,l1_0.password,l1_0.username,sic1_1.start,sic1_1.title from users_sign_in_courses sic1_0 join courses sic1_1 on sic1_1.id=sic1_0.sign_in_courses_id left join users l1_0 on l1_0.id=sic1_1.lecturer_id where sic1_0.students_id=?
+2024-03-22T18:45:21.419+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [10]
+2024-03-22T18:45:21.421+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-22T18:45:21.423+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [10]
+2024-03-22T18:45:21.424+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_0.id,r1_0.description,r1_0.name from reviews r1_0 where r1_0.user_id=?
+2024-03-22T18:45:21.425+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [10]
+2024-03-22T18:45:21.427+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-22T18:45:21.427+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [10]
+2024-03-22T18:45:21.429+02:00 TRACE 23292 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2024-03-22T18:45:21.429+02:00 TRACE 23292 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-03-22T18:45:21.432+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select count(*) from users u1_0
+2024-03-22T18:45:21.437+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name,u1_0.password,u1_0.username from users u1_0 where u1_0.email=?
+2024-03-22T18:45:21.439+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) &lt;- [pesho@example.com]
+2024-03-22T18:45:21.443+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name,u1_0.password,u1_0.username from users u1_0
+2024-03-22T18:45:21.444+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select sic1_0.students_id,sic1_1.id,sic1_1.age_limit,sic1_1.description,sic1_1.end,l1_0.id,l1_0.email,l1_0.full_name,l1_0.password,l1_0.username,sic1_1.start,sic1_1.title from users_sign_in_courses sic1_0 join courses sic1_1 on sic1_1.id=sic1_0.sign_in_courses_id left join users l1_0 on l1_0.id=sic1_1.lecturer_id where sic1_0.students_id=?
+2024-03-22T18:45:21.444+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [10]
+2024-03-22T18:45:21.445+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_1.id,r1_1.role_type from users_roles r1_0 join roles r1_1 on r1_1.id=r1_0.roles_id where r1_0.user_id=?
+2024-03-22T18:45:21.445+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [10]
+2024-03-22T18:45:21.446+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select r1_0.user_id,r1_0.id,r1_0.description,r1_0.name from reviews r1_0 where r1_0.user_id=?
+2024-03-22T18:45:21.447+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [10]
+2024-03-22T18:45:21.447+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : select c1_0.lecturer_id,c1_0.id,c1_0.age_limit,c1_0.description,c1_0.end,c1_0.start,c1_0.title from courses c1_0 where c1_0.lecturer_id=?
+2024-03-22T18:45:21.454+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [10]
+2024-03-22T18:45:21.455+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : delete from users_roles where user_id=?
+2024-03-22T18:45:21.456+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [10]
+2024-03-22T18:45:21.456+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : delete from roles where id=?
+2024-03-22T18:45:21.456+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [10]
+2024-03-22T18:45:21.457+02:00 DEBUG 23292 --- [    Test worker] org.hibernate.SQL                        : delete from users where id=?
+2024-03-22T18:45:21.457+02:00 TRACE 23292 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) &lt;- [10]
+2024-03-22T18:45:21.457+02:00  WARN 23292 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: -8, SQLState: 23504
+2024-03-22T18:45:21.457+02:00 ERROR 23292 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : integrity constraint violation: foreign key no action ; FK8OMQ0TC18JD43BU5TJH6JVRAQ table: COMMENTS
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /users/register
+       Parameters = {email=[pesho@example.com], fullName=[Petar Petrov], username=[pesho], password=[1234], confirmPassword=[1234], _csrf=[-iMQn7NMWVUqEeFrNwXIdTHY3ANL8lmQzBb9bS2oGvGOGxojzRonr9Z4PTYHcodcVCj8TAG-8Tt4xGq9qiCfXUmQe5S9KC4b]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.roboworld.web.UserController
+           Method = com.example.roboworld.web.UserController#confirmRegister(UserRegisterDto, RedirectAttributes, BindingResult)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:register
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Language:&quot;en&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;, Location:&quot;register&quot;]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = register
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at Mar 22, 2024, 6:45:21 PM</p>
+</div>
+</div>
+</body>
+</html>
