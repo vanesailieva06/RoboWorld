@@ -5,7 +5,7 @@ const searchBar13To15 = document.getElementById('search-bar-13-to-15')
 const allCourses13To15 = [];
 
 
-fetch("https://roboworld.greenplant-7af38050.westeurope.azurecontainerapps.io/courses/thirteenToFifteen/api").
+fetch("https://localhost:8080/courses/thirteenToFifteen/api").
 then(response => response.json()).
 then(data => {
     for (let course of data) {
